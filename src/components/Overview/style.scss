@@ -1,0 +1,85 @@
+@import '../../styles/base.scss';
+
+.overview {
+    overflow-x: hidden;
+    &__hero {
+        margin-right: -2rem;
+        padding: 8vw 0 8vw 8vw;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        &__list {
+            text-align: left;
+        }
+        ul {
+            height: 240px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: space-between;
+            justify-content: space-between;
+            margin-top: 3rem;
+            li {
+                display: inline-block;
+            }
+        }
+    }
+    
+    &__nonprofit {
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        height: 400px;
+        margin-top: -2px;
+        &:nth-child(odd) {
+            grid-template-columns: 1fr 400px;
+            .overview__nonprofit {
+                &__header {
+                    border: none;
+                    border-left: 2px solid black;
+                }
+                &__description {
+                    grid-row: 1;
+                }
+            }
+        }
+        &__header {
+            height: 100%;
+            border-right: 2px solid black;
+            &__title {
+                height: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-bottom: 2px solid black;
+            }
+            &__detail {
+                height: 50%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                > div:first-child {
+                    border-right: 2px solid black;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                > div:last-child {
+                    > div {
+                        box-sizing: border-box;
+                        -moz-box-sizing: border-box;
+                        -webkit-box-sizing: border-box;
+                        height: 100%;
+                        border-radius: 50%;
+                        border: 2px solid black;
+                    }
+
+                }
+            }
+        }
+        &__description {
+            padding: 1rem 3rem;
+            display: flex;
+        }
+    }
+}

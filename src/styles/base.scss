@@ -27,3 +27,16 @@ $p-font: "Space Grotesk";
 $sub-font: "Inter";
 
 $link-font: "NB International Mono";
+
+h1,
+h2 {
+    font-family: $heading-font;
+    text-transform: uppercase;
+    font-size: 8rem;
+    line-height: 120%;
+}
+
+p,
+li {
+    font-size: 1.5rem;
+}
