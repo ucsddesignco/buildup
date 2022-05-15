@@ -1,0 +1,93 @@
+@import '../../styles/base.scss';
+
+
+/********* Accordion ********/
+.faqs {
+    text-align: left;
+    color: #000;
+
+    .faq {
+      border: 0.5px solid #e0d9d5;
+      border-left: 0px;
+      border-right: 0px;
+      padding: 1.5rem 8vw;
+      cursor: pointer;
+
+      .faq-question {
+        position: relative;
+        font-size: 1.5rem;
+        padding-right: 80px;
+        font-family: "Neue Plak";
+        font-size: 1.5rem;
+      
+        transition: all 0.2s ease;
+      }
+      .faq-question::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        transform: translateY(-50%);
+        width: 1rem;
+        height: 1rem;
+      
+        background-image: url("../../assets/images/icon-plus.svg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: all 0.2s ease;
+      }
+    }
+}
+  
+  
+  
+  
+  
+
+  
+  .faqs .faq .faq-answer {
+    opacity: 0;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: all 0.2s ease;
+    font-family: "Inter";
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  
+  .faqs .faq.open .faq-question {
+    margin-bottom: 15px;
+  }
+  
+  .faqs .faq.open .faq-question::after {
+    transform: translateY(-50%) rotate(135deg);
+  }
+  
+  .faqs .faq.open .faq-answer {
+    max-height: 1000px;
+    opacity: 1;
+  }
+  
+  /**** FAQ Media Query ***/
+  @media (max-width: 768px) {
+    #faq {
+      padding-top: 3.5rem;
+    }
+    .faq-title {
+      font-size: 3rem;
+      letter-spacing: 0.05rem;
+      margin: 0 auto;
+      -webkit-text-stroke: 1px #e0d9d5;
+      color: #292929;
+    }
+    .faqs .faq .faq-question {
+      font-size: 1.25rem;
+    }
+    .faqs .faq .faq-answer {
+      font-size: 1rem;
+    }
+    #faq:target {
+      padding-top: calc(3.5rem + 70px);
+    }
+  }

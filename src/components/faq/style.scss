@@ -1,0 +1,17 @@
+@import '../../styles/base.scss';
+
+.faq {
+    display: flex;
+    font-size: 2rem;
+    flex-direction: column;
+    text-align: left;
+    padding: 4rem 0;
+
+    h1 {
+        font-family: $heading-font;
+        padding: 4rem 8vw;
+    }
+}
+
+
+
