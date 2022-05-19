@@ -5,11 +5,39 @@
     font-size: 2rem;
     flex-direction: column;
     text-align: left;
-    padding: 4rem 0;
+    background-color: #E7E5D1;
 
-    h1 {
-        font-family: $heading-font;
-        padding: 4rem 8vw;
+    .heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0 3rem;
+
+        h1 {
+            font-family: $heading-font;
+            padding: 0 0 0 8vw;
+            font-size: 6rem;
+            color: #424242;
+        }
+        img {
+            width: 35vw;
+            object-fit: contain;
+            padding: 2rem 8vw 0;
+        }
+    }
+
+    @media only screen and (max-width: 700px) {
+        .heading {
+
+            h1 {
+                font-size: 3.5rem;
+            }
+            img {
+                width: 35vw;
+                margin-bottom: 0.5rem;
+            }
+        }
     }
 }
 

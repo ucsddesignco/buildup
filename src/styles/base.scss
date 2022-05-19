@@ -9,6 +9,10 @@
     src: url("../assets/fonts/NBInternationalMonoWebfont.woff") format("woff");
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
