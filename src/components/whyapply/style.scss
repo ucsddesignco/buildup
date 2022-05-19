@@ -26,7 +26,7 @@
         h1 {
             font-size: 12vw;
             text-align: right;
-            line-height: 80%;
+            line-height: 90%;
         }
     }
 
@@ -116,6 +116,10 @@
         grid-column-end: span 4; 
         width: auto;
         margin: 0;
+
+        p {
+            margin-top: 0.5rem;
+        }
     }
 
     #second-row {
