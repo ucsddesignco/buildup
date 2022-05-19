@@ -9,20 +9,22 @@
     border-bottom: solid 1px $primary-color;
     text-align: left;
     font-family: $p-font;
+    background-repeat: repeat;
+    background-image: url('../../assets/images/website_texture.png');
 
     .big-title {
         display: flex;
         align-items: center;
         flex-direction: row;
-        height: 5.5rem;
+        height: 22vw;
 
         img {
             height: 100%;
-            margin-right: -2.5rem;
+
         }
 
         h1 {
-            font-size: 3.5rem;
+            font-size: 12vw;
             text-align: right;
             line-height: 80%;
         }
@@ -78,14 +80,14 @@
     .big-title {
         grid-column-start: 1;
         grid-column-end: end;
-        height: 13rem;
+        height: 22vw;
 
         img {
             margin-right: 0;
         }
 
         h1 {
-            font-size: 7rem;
+            font-size: 12vw;
             line-height: 90%;
         }
     }
@@ -158,38 +160,4 @@
         margin: 0;
     }
 }
-}
-
-@media only screen and (min-width: 960px) {
-    .grid {
-        .big-title {
-            height: 17rem;
-    
-            img {
-                margin-right: 0;
-            }
-    
-            h1 {
-                font-size: 9rem;
-                line-height: 90%;
-            }
-        }
-    }
-}
-
-@media only screen and (min-width: 1250px) {
-    .grid {
-        .big-title {
-            height: 20rem;
-    
-            img {
-                margin-right: 0;
-            }
-    
-            h1 {
-                font-size: 11rem;
-                line-height: 90%;
-            }
-        }
-    }
 }
