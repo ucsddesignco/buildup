@@ -15,8 +15,9 @@
         position: relative;
         font-size: 1.5rem;
         padding-right: 80px;
-        font-family: "Neue Plak";
+        font-family: $p-font;
         font-size: 1.5rem;
+        font-weight: 500;
       
         transition: all 0.2s ease;
       }
@@ -40,7 +41,7 @@
         max-height: 0;
         overflow-y: hidden;
         transition: all 0.2s ease;
-        font-family: "Inter";
+        font-family: $p-font;
         font-size: 1.25rem;
         line-height: 1.5;
       }

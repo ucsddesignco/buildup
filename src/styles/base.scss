@@ -2,7 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
-@import url(//db.onlinewebfonts.com/c/d3a85c6c38eeb78ad624d05db74526bd?family=Neue+Plak+W01);
+@font-face {
+    font-family: "Neue Plak";
+    src: url("../assets/fonts/NeuePlakW01.otf") format("opentype");
+}
 
 @font-face {
     font-family: "NB International Mono";
@@ -24,7 +27,7 @@ body {
     background-color: white;
 }
 
-$heading-font: "Neue Plak W01";
+$heading-font: "Neue Plak";
 
 $p-font: "Space Grotesk";
 
