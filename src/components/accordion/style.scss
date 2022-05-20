@@ -1,71 +1,66 @@
 @import '../../styles/base.scss';
 
 
-/********* Accordion ********/
 .faqs {
-    width: 100%;
     text-align: left;
-    color: #000;
+    background-color: #E7E5D1;
+
+    .faq {
+      border-top: 1.5px solid #424242;
+      padding: 1.5rem 8vw;
+      cursor: pointer;
+      color: #424242;
+
+      .faq-question {
+        position: relative;
+        font-size: 1.5rem;
+        padding-right: 80px;
+        font-family: $p-font;
+        font-size: 1.5rem;
+        font-weight: 500;
+      
+        transition: all 0.2s ease;
+      }
+      .faq-question::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        transform: translateY(-50%);
+        width: 1rem;
+        height: 1rem;
+      
+        background-image: url("../../assets/images/icon-plus.svg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: all 0.2s ease;
+      }
+      .faq-answer {
+        opacity: 0;
+        max-height: 0;
+        overflow-y: hidden;
+        transition: all 0.2s ease;
+        font-family: $p-font;
+        font-size: 1.25rem;
+        line-height: 1.5;
+      }
+    }
+    .faq.open {
+
+      .faq-question {
+        margin-bottom: 15px;
+      }
+      .faq-question::after {
+        transform: translateY(-50%) rotate(135deg);
+      }
+      .faq-answer {
+        max-height: 1000px;
+        opacity: 1;
+      }
+    }
   }
-  
-  .faqs .faq {
-    border: 0.5px solid #e0d9d5;
-    border-left: 0px;
-    border-right: 0px;
-    padding: 1.5rem 8vw;
-    cursor: pointer;
-  }
-  
-  .faqs .faq .faq-question {
-    position: relative;
-    font-size: 1.5rem;
-    padding-right: 80px;
-    font-family: "Neue Plak";
-    font-size: 1.5rem;
-  
-    transition: all 0.2s ease;
-  }
-  
-  .faqs .faq .faq-question::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 0px;
-    transform: translateY(-50%);
-    width: 1rem;
-    height: 1rem;
-  
-    background-image: url("../../assets/images/icon-plus.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    transition: all 0.2s ease;
-  }
-  
-  .faqs .faq .faq-answer {
-    opacity: 0;
-    max-height: 0;
-    overflow-y: hidden;
-    transition: all 0.2s ease;
-    font-family: "Inter";
-    font-size: 1.25rem;
-    line-height: 1.5;
-  }
-  
-  .faqs .faq.open .faq-question {
-    margin-bottom: 15px;
-  }
-  
-  .faqs .faq.open .faq-question::after {
-    transform: translateY(-50%) rotate(135deg);
-  }
-  
-  .faqs .faq.open .faq-answer {
-    max-height: 1000px;
-    opacity: 1;
-  }
-  
-  /**** FAQ Media Query ***/
+
   @media (max-width: 768px) {
     #faq {
       padding-top: 3.5rem;

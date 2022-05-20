@@ -10,11 +10,13 @@ function Footer() {
           <p>Made with</p>
           <div className="footer-logo">
             <img src={Heart} alt="heart-icon"/>
-            <img className="dco-footer-logo" src={Logo} alt="dco-logo" />
+            <a href="https://ucsddesign.co/" target="_blank">
+              <img className="dco-footer-logo" src={Logo} alt="dco-logo" />
+            </a>
           </div>
         </div>
         <div className="footer-right">
-          <a href="">hello@ucsddesign.co</a>  
+          <a href="mailto:hello@ucsddesign.co">hello@ucsddesign.co</a>  
         </div>
     </div>
   )
