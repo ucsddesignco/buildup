@@ -41,45 +41,42 @@ const WhyApply = () => {
             <div className='text-block1'>
                 <div className='text-title'>
                     <img src={Arrow} />
-                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <h2>Build Up your portfolio and resume</h2>
                 </div>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id 
-                    laoreet faucibus placerat volutpat aliquam. Orci ut ultricies 
-                    ac mi. Est, amet, viverra interdum eu mattis lobortis felis.
+                    Develop a unique and tangible project to share with industry 
+                    professionals, along with a meaningful story of your journey 
+                    as you Build Up your initial ideas to final deliverables.
                 </p>
             </div>
             <div className='text-block2'>
                 <div className='text-title'>
                     <img src={Arrow} />
-                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <h2>Network with peers and industry professionals</h2>
                 </div>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id 
-                    laoreet faucibus placerat volutpat aliquam. Orci ut ultricies 
-                    ac mi. Est, amet, viverra interdum eu mattis lobortis felis.
+                    Get to collaborate with students from different backgrounds and 
+                    connect with mentors and impactful nonprofits in the community!
                 </p>
             </div>
             <div className='text-block1' id='second-row'>
                 <div className='text-title'>
                     <img src={Arrow} />
-                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <h2>Put classroom knowledge to use in a real-world setting</h2>
                 </div>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id 
-                    laoreet faucibus placerat volutpat aliquam. Orci ut ultricies 
-                    ac mi. Est, amet, viverra interdum eu mattis lobortis felis.
+                    Apply your academic design knowledge this summer by solving 
+                    real-world problems and taking part in social justice initiatives.
                 </p>
             </div>
             <div className='text-block2' id='second-row'>
                 <div className='text-title'>
                     <img src={Arrow} />
-                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <h2>Create meaningful solutions for social impact nonprofits</h2>
                 </div>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id 
-                    laoreet faucibus placerat volutpat aliquam. Orci ut ultricies 
-                    ac mi. Est, amet, viverra interdum eu mattis lobortis felis.
+                    Work directly to address current social issues that you care about 
+                    and be a part in spreading awareness through universal design thinking!
                 </p>
             </div>
 
