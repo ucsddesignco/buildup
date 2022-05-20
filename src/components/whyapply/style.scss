@@ -16,17 +16,112 @@
         display: flex;
         align-items: center;
         flex-direction: row;
-        height: 22vw;
 
-        img {
-            height: 100%;
+        .row {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
 
+            .square {
+                border: $primary-color solid 1px;
+                height: 5.5vw;
+                width: 5.5vw;
+                margin: -0.5px;
+            }
+            
+            .circle {
+                border: $primary-color solid 1px;
+                border-radius: 50%;
+                background-color: #9BB7FF;
+                height: 5.5vw;
+                width: 5.5vw;
+                margin: -0.5px;
+            }
+
+            .oval {
+                border: $primary-color solid 1px;
+                background-color: #43A047;
+                height: 5.5vw;
+                width: 11vw;
+                margin: -0.5px 0px;
+                border-radius: 25%/50%;
+            }
+
+            .circle {
+                animation-name: trans3;
+                animation-duration: 6s; 
+                animation-timing-function: linear; 
+                animation-delay: 0;
+                animation-direction: normal;
+                animation-iteration-count: infinite;
+                animation-fill-mode: none;
+                animation-play-state: running;
+            }
+              
+            @keyframes trans3 {
+                47% {
+                  border-radius: 100%;
+                }
+                67% {
+                  border-radius: 0%;
+                }
+                87% {
+                  border-radius: 100%;
+                }
+            }
+
+            #oval1 {
+                animation-name: trans2;
+                animation-duration: 6s; 
+                animation-timing-function: linear; 
+                animation-delay: 0;
+                animation-direction: normal;
+                animation-iteration-count: infinite;
+                animation-fill-mode: none;
+                animation-play-state: running;
+            }
+              
+            @keyframes trans2 {
+                33% {
+                  border-radius: 25%/50%;
+                }
+                43% {
+                  border-radius: 0%;
+                }
+                53% {
+                  border-radius: 25%/50%;
+                }
+            }
+
+            #oval2 {
+                animation-name: trans4;
+                animation-duration: 6s; 
+                animation-timing-function: linear; 
+                animation-delay: 0;
+                animation-direction: normal;
+                animation-iteration-count: infinite;
+                animation-fill-mode: none;
+                animation-play-state: running;
+            }
+              
+            @keyframes trans4 {
+                80% {
+                  border-radius: 25%/50%;
+                }
+                90% {
+                  border-radius: 0%;
+                }
+                100% {
+                  border-radius: 25%/50%;
+                }
+            }
         }
 
         h1 {
             font-size: 12vw;
             text-align: right;
             line-height: 90%;
+            margin-right: -8vw;
         }
     }
 
@@ -70,33 +165,75 @@
 }
 
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 600px) {
 
-.grid {
-    grid-template-columns: repeat(12, 1fr);
-    padding: 7.5rem 8vw;
-    grid-row-gap: 3.75rem;
+    .grid {
+        grid-template-columns: repeat(12, 1fr);
+        padding: 7.5rem 8vw;
+        grid-row-gap: 3.75rem;
 
-    .big-title {
-        grid-column-start: 1;
-        grid-column-end: end;
+        .big-title {
+            grid-column-start: 1;
+            grid-column-end: end;
 
-        img {
-            margin-right: 0;
+            .row {
+
+                .square {
+                    border: $primary-color solid 2px;
+                    margin: -1px;
+                }
+                
+                .circle {
+                    border: $primary-color solid 2px;
+                    margin: -1px;
+                }
+
+                .oval {
+                    border: $primary-color solid 2px;
+                    margin: -1px 0px;
+                    border-radius: 25%/50%;
+                }
+            }
         }
-    }
 
-    h2, p {
-        font-size: 1.5rem;
-    }
-    
-    .text-block1 {
-        grid-column-start: 2;
-        grid-column-end: span 4; 
-        width: auto;
+        h2, p {
+            font-size: 1.5rem;
+        }
+        
+        .text-block1 {
+            grid-column-start: 2;
+            grid-column-end: span 4; 
+            width: auto;
 
-        p {
-            margin-top: 0.5rem;
+            p {
+                margin-top: 0.5rem;
+            }
+
+            .text-title {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+
+                img {
+                    height: 48px;
+                    margin-right: 2rem;
+                }
+            }
+        }
+
+        .text-block2 {
+            grid-column-start: 8;
+            grid-column-end: span 4; 
+            width: auto;
+            margin: 0;
+
+            p {
+                margin-top: 0.5rem;
+            }
+        }
+
+        #second-row {
+            grid-row-start: 4;
         }
 
         .text-title {
@@ -109,53 +246,26 @@
                 margin-right: 2rem;
             }
         }
-    }
 
-    .text-block2 {
-        grid-column-start: 8;
-        grid-column-end: span 4; 
-        width: auto;
-        margin: 0;
+        .subtitle {
+            grid-row-start: 6;
+            grid-column-start: 2;
+            grid-column-end: span 10;
+            margin: 0;
+        }
 
-        p {
-            margin-top: 0.5rem;
+        .testimony1 {
+            grid-row-start: 7;
+            grid-column-start: 2;
+            grid-column-end: span 4;
+            margin: 0;
+        }
+
+        .testimony2 {
+            grid-row-start: 7;
+            grid-column-start: 8;
+            grid-column-end: span 4;
+            margin: 0;
         }
     }
-
-    #second-row {
-        grid-row-start: 4;
-    }
-
-    .text-title {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-
-        img {
-            height: 48px;
-            margin-right: 2rem;
-        }
-    }
-
-    .subtitle {
-        grid-row-start: 6;
-        grid-column-start: 2;
-        grid-column-end: span 10;
-        margin: 0;
-    }
-
-    .testimony1 {
-        grid-row-start: 7;
-        grid-column-start: 2;
-        grid-column-end: span 4;
-        margin: 0;
-    }
-
-    .testimony2 {
-        grid-row-start: 7;
-        grid-column-start: 8;
-        grid-column-end: span 4;
-        margin: 0;
-    }
-}
 }

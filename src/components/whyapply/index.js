@@ -1,13 +1,39 @@
 import React from 'react';
 import './style.scss';
-import BlockImage from "../../assets/images/apply-img.png";
 import Arrow from "../../assets/images/arrow.svg";
 
 const WhyApply = () => {
     return (
       <div className='grid'>
             <div className='big-title'>
-                <img src={BlockImage} />
+                <div className='blocks'>
+                    <div className='row'>
+                        <div className='square'></div>
+                        <div className='square'></div>
+                        <div className='square'></div>
+                        <div className='square'></div>
+                        <div className='oval' id='oval1'></div>
+                    </div>
+                    <div className='row'>
+                        <div className='square'></div>
+                        <div className='square'></div>
+                        <div className='square'></div>
+                        <div className='circle'></div>
+                        <div className='square'></div>
+                        <div className='square'></div>
+                    </div>
+                    <div className='row'>
+                        <div className='square'></div>
+                        <div className='oval' id='oval2'></div>
+                        <div className='square'></div>
+                        <div className='square'></div>
+                    </div>
+                    <div className='row'>
+                        <div className='square'></div>
+                        <div className='square'></div>
+                        <div className='square'></div>
+                    </div>
+                </div>
                 <h1>WHY APPLY?</h1>
             </div>
             
