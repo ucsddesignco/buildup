@@ -20,21 +20,20 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 1vw;
-  padding-bottom: 8.4vw;
+  padding-bottom: 6vw;
   .circle {
-    border: black solid 1px;
+    border: #424242 solid 0.5px;
     border-radius: 50%;
     background-color: #9BB7FF;
-    height: 6vw;
-    width: 6vw;
-    margin-left: -0.5px;
-    margin-right: -0.5px;
+    height: 5vw;
+    width: 5vw;
+    margin-left: -0.25px;
+    margin-right: -0.25px;
 
   }
   #circle1 {
     animation-name: trans1;
-    animation-duration: 8s; 
+    animation-duration: 6s; 
     animation-timing-function: linear; 
     animation-delay: 0;
     animation-direction: normal;
@@ -57,7 +56,7 @@ html {
 
   #circle2 {
     animation-name: trans3;
-    animation-duration: 8s; 
+    animation-duration: 6s; 
     animation-timing-function: linear; 
     animation-delay: 0;
     animation-direction: normal;
@@ -81,18 +80,18 @@ html {
 
 
   .oval {
-    border: black solid 1px;
+    border: #424242 solid 0.5px;
     background-color: #43A047;
-    height: 6vw;
-    width: 12vw;
-    margin-left: -0.5px;
-    margin-right: -0.5px;
+    height: 5vw;
+    width: 10vw;
+    margin-left: -0.25px;
+    margin-right: -0.25px;
     border-radius: 25%/50%;
   }
 
   #oval1 {
     animation-name: trans2;
-    animation-duration: 8s; 
+    animation-duration: 6s; 
     animation-timing-function: linear; 
     animation-delay: 0;
     animation-direction: normal;
@@ -115,7 +114,7 @@ html {
 
   #oval2 {
     animation-name: trans4;
-    animation-duration: 8s; 
+    animation-duration: 6s; 
     animation-timing-function: linear; 
     animation-delay: 0;
     animation-direction: normal;
@@ -138,11 +137,11 @@ html {
 
 
   .square {
-    border: black solid 1px;
-    height: 6vw;
-    width: 6vw;
-    margin-left: -0.5px;
-    margin-right: -0.5px;
+    border: #424242 solid 0.5px;
+    height: 5vw;
+    width: 5vw;
+    margin-left: -0.25px;
+    margin-right: -0.25px;
   }
 }
 
@@ -163,7 +162,7 @@ html {
   #right {
     margin-top: -0.5em;
     text-align: end;
-    margin-right: -0.4rem;
+    margin-right: -1.2rem;
     padding-top: 0rem; 
   }
 }
@@ -189,7 +188,7 @@ html {
     font-size: 1.6vw;
     height: 20vw;
     font-size: 3.4vw;
-    margin-bottom: 3rem;
+    margin-bottom: 2.8rem;
   }
 }
 
@@ -201,6 +200,15 @@ html {
     }
     #right {
       margin-right: -0.5rem;
+    }
+  }
+  .body {
+    #leftText {
+      margin-bottom: 3.5rem;
+    }
+
+    #rightText {
+      margin-bottom: 3.4rem;
     }
   }
  
@@ -216,10 +224,18 @@ html {
       margin-right: -0.7rem;
     }
   }
+  .body {
+    #leftText {
+      margin-bottom: 4.6rem;
+    }
+    #rightText {
+      margin-bottom: 3.6rem;
+    }
+  }
  
 }
 
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 601px) {
     
   .title {
     #left {
@@ -242,7 +258,6 @@ html {
   
   .body {
     display: flex;
-    font-size: 1.7vw;
     p {  
       width: 42vw;
       margin-left: 1rem;
@@ -269,32 +284,32 @@ html {
     align-items: center;
     justify-content: center;
     padding-bottom: 0vw;
-    padding-top: 1vw;
+    padding-top: 2vw;
     padding-bottom: 5vw;
     .circle {
-      border: black solid 2px;
+      border: #424242 solid 1px;
       border-radius: 50%;
       background-color: #9BB7FF;
-      height: 6vw;
-      width: 6vw;
-      margin-left: -1px;
-      margin-right: -1px;
+      height: 5vw;
+      width: 5vw;
+      margin-left: -0.5px;
+      margin-right: -0.5px;
     }
     .oval {
-      border: black solid 2px;
+      border: #424242 solid 1px;
       background-color: #43A047;
-      height: 6vw;
-      width: 12vw;
-      margin-left: -1px;
-      margin-right: -1px;
+      height: 5vw;
+      width: 10vw;
+      margin-left: -0.5px;
+      margin-right: -0.5px;
       border-radius: 25%/50%;
     }
     .square {
-      border: black solid 2px;
-      height: 6vw;
-      width: 6vw;
-      margin-left: -1px;
-      margin-right: -1px;
+      border: #424242 solid 1px;
+      height: 5vw;
+      width: 5vw;
+      margin-left: -0.5px;
+      margin-right: -0.5px;
     }
   }
   
