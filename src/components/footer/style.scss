@@ -37,6 +37,20 @@
         }
     }
 
+    @media only screen and (max-width: $desktop) {
+        .footer-left {
+            .footer-logo {
+                .heart-icon {
+                    height: 0.75rem;
+                }
+                .dco-footer-logo {
+                    height: 0.75rem;
+                    margin-top: 0.3rem;
+                }
+            }
+        }
+    }
+
     @media only screen and (max-width: $mobile) {
         padding: 2rem $mobile-padding;
         border-top: $mobile-stroke;

@@ -6,7 +6,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 8vw;
+    padding: 2rem $desktop-padding;
     background-image: url("../../assets/images/website_texture.png");
 
     img {
@@ -32,8 +32,8 @@
             .pill {
                 
                 a {
-                    border-radius: 40px;
-                    border: 1.5px solid #424242;
+                    border-radius: 200px;
+                    border: $desktop-stroke;
                     padding: 0.5rem 1.25rem;
                 }
             }
@@ -59,7 +59,7 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            padding: 2rem 8vw;
+            padding: 2rem $mobile-padding;
 
             .menu {
                 cursor: pointer;
@@ -73,7 +73,7 @@
 
             .section {
                 display: flex;
-                border-top: 1px solid #424242;
+                border-top: $mobile-stroke;
                 padding: 2vh 8vw;
     
                 p {
@@ -85,7 +85,7 @@
             }
         }
         .border-bottom {
-            border-top: 1px solid #424242;
+            border-top: $mobile-stroke
         }
         .pill {
             padding: 4vh 0;
@@ -107,7 +107,7 @@
             justify-content: space-between;
             align-items: center;
             background-color: #E7E5D1;
-            border-top: 1.5px solid #000;
+            border-top: $mobile-stroke;
             padding: 2rem 8vw;
             position: fixed;
             width: 84vw;
@@ -146,18 +146,19 @@
                     font-size: 0.5rem;
                 }
             }
+            
         }
 
     }
-    @media only screen and (max-width: 880px) {
+    @media only screen and (max-width: $desktop) {
         ul {
             li {
                 font-size: 0.9rem;
-                margin-left: 1rem;
+                margin-left: clamp(0.25rem, 1vw, 1rem);
             }
         }
     }
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: $mobile) {
         ul {
             display: none;
         }
