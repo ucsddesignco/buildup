@@ -145,6 +145,10 @@
 
     .text-block1, .text-block2 {
         width: 60vw;
+
+        p {
+            margin-top: 0.5rem;
+        }
     }
 
     .text-block2 {
@@ -157,7 +161,7 @@
 }
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: $mobile) {
 
     .grid {
         grid-template-columns: repeat(12, 1fr);
@@ -189,7 +193,7 @@
         }
 
         h3, p {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
         
         .text-block1 {
@@ -254,6 +258,14 @@
             grid-column-start: 8;
             grid-column-end: span 4;
             margin: 0;
+        }
+    }
+}
+
+@media only screen and (min-width: $desktop) {
+    .grid {
+        h3, p {
+            font-size: 1.5rem;
         }
     }
 }
