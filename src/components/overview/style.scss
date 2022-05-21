@@ -6,11 +6,11 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid black;
     width: calc(100vw - 8vw);
     overflow-x: hidden;
     background-image: url(../../assets/images/website_texture.png);
-    border-top: 2px solid $primary-color;
+    border-top: $desktop-stroke;
+    border-bottom: $desktop-stroke;
 
     h2 {
         transform: translateX(20px);
