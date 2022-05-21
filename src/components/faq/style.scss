@@ -13,7 +13,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem $desktop-padding 3rem;
+        padding: 4rem $desktop-padding 3.75rem;
 
         img {
             width: 35vw;
@@ -22,9 +22,9 @@
         }
     }
 
-    @media only screen and (max-width: mobile) {
+    @media only screen and (max-width: $mobile) {
         .heading {
-            padding: 1rem $mobile-padding 3rem;
+            padding: 2rem $mobile-padding 1rem;
 
             img {
                 width: 35vw;

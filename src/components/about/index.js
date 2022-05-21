@@ -7,8 +7,8 @@ const About = () => {
   return (
     <div className="page">
     <div className='title'>
-      <h1 id="left">WHAT IS</h1>
-      <h1 id="right">BUILD UP?</h1>
+      <h2 id="left">WHAT IS</h2>
+      <h2 id="right">BUILD UP?</h2>
     </div>
     <div className="lower">
       <div className='body'>
