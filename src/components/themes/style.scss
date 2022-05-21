@@ -2,7 +2,6 @@
 
 .themes {
     background-image: url(../../assets/images/website_texture.png);
-    border-bottom: $desktop-stroke;
     padding: 0 8vw;
 
     h2 {
@@ -114,6 +113,98 @@
                     grid-row: 1;
                 }
             }
+        }
+    }
+
+    @media only screen and (max-width: $desktop) {
+        ul li {
+            font-size: 0.9rem;
+        }
+    }
+
+    @media only screen and (max-width: 760px) {
+        padding: 0 10vw;
+        > p {
+            margin: 30px 0;
+            text-align: left;
+        }
+        &__section {
+            grid-template-columns: 80vw;
+            &__header {
+                height: calc(100vw - 20vw);
+                margin-bottom: 2px;
+                &__title {
+                    border: $mobile-stroke;
+                }
+                &__detail {
+                    > div:first-child {
+                        > div {
+                            border: $mobile-stroke;
+                        }
+                    }
+                    > div:last-child {
+                        border: $mobile-stroke;
+                        border-top: none;
+                        border-bottom: none;
+                    }
+                }
+            }
+            &__description {
+                border: $mobile-stroke;
+            }
+            &:nth-child(even) {
+                grid-template-columns: 80vw;
+                .themes__section {
+                    &__header {
+                        height: calc(100vw - 20vw);
+                        &__title {
+                            border-left: $mobile-stroke;
+                            border-right: $mobile-stroke;
+                        }
+                        &__detail {
+                            > div:last-child {
+                                border-left: $mobile-stroke;
+                                border-right: $mobile-stroke;
+                            }
+                        }
+                    }
+                    &__description {
+                        grid-row: 2;
+                    }
+                }
+            }
+            .shapes {
+                width: calc(100% - 0.5px);
+                height: 14vw;
+                margin: 0;
+                .oval {
+                    height: 14vw;
+                    width: 28vw;
+                    border: $mobile-stroke;
+                }
+                .square {
+                    height: 14vw;
+                    width: 14vw;
+                    border: $mobile-stroke;
+                }
+                .circle {
+                    height: 14vw;
+                    width: 14vw;
+                    border: $mobile-stroke;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: $mobile) {
+        &__wrapper {
+            padding-bottom: 60px;
+        }
+        &__section__description {
+            height: 220px;
+            padding: 1rem 2rem;
+        }
+        ul li {
+            font-size: 0.8rem;
         }
     }
 }
