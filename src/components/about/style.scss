@@ -152,6 +152,7 @@ html {
   font-size: 7.1vw;
   padding-top: 0px;
   padding-top: 1.6rem;
+  margin-bottom: 2rem;
   
   #left {
     text-align: start;
@@ -239,6 +240,8 @@ html {
 @media screen and (min-width: 601px) {
     
   .title {
+    margin-bottom: 3.75rem;
+
     #left {
       text-align: start;
       margin-left: -1rem;

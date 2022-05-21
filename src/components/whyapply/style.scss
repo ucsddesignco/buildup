@@ -117,15 +117,13 @@
             }
         }
 
-        h1 {
-            font-size: 12vw;
+        h2 {
             text-align: right;
-            line-height: 90%;
             margin-right: -8vw;
         }
     }
 
-    h2 {
+    h3 {
         font-size: 0.8rem;
     }
 
@@ -151,16 +149,10 @@
 
     .text-block2 {
         margin-left: auto;
-        margin-right: 10vw;
     }
 
     .subtitle {
         margin-top: 2rem;
-        margin-right: 10vw;
-    }
-
-    .testimony1, .testimony2 {
-        margin-right: 10vw;
     }
 }
 
@@ -196,7 +188,7 @@
             }
         }
 
-        h2, p {
+        h3, p {
             font-size: 1.5rem;
         }
         
@@ -232,10 +224,6 @@
             }
         }
 
-        #second-row {
-            grid-row-start: 4;
-        }
-
         .text-title {
             display: flex;
             align-items: center;
@@ -248,21 +236,21 @@
         }
 
         .subtitle {
-            grid-row-start: 6;
+            grid-row-start: 5;
             grid-column-start: 2;
             grid-column-end: span 10;
             margin: 0;
         }
 
         .testimony1 {
-            grid-row-start: 7;
+            grid-row-start: 6;
             grid-column-start: 2;
             grid-column-end: span 4;
             margin: 0;
         }
 
         .testimony2 {
-            grid-row-start: 7;
+            grid-row-start: 6;
             grid-column-start: 8;
             grid-column-end: span 4;
             margin: 0;

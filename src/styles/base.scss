@@ -61,6 +61,7 @@ h2 {
     color: $primary-color;
     font-family: $heading-font;
     font-size: clamp(48px, 12vw, 160px);
+    line-height: 90%;
     text-transform: uppercase;
 }
 
