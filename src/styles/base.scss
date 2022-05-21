@@ -61,9 +61,11 @@ h2 {
     color: $primary-color;
     font-family: $heading-font;
     font-size: clamp(48px, 12vw, 160px);
+    text-transform: uppercase;
 }
 
-p {
+p, 
+li {
     color: $primary-color;
     font-family: $p-font;
     font-size: 0.8rem;
