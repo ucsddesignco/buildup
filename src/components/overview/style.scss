@@ -10,6 +10,7 @@
     width: calc(100vw - 8vw);
     overflow-x: hidden;
     background-image: url(../../assets/images/website_texture.png);
+    border-top: 2px solid $primary-color;
 
     h2 {
         transform: translateX(20px);
@@ -20,7 +21,7 @@
         text-align: left;
     }
     ul {
-        height: 30vh;
+        height: 280px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -34,6 +35,39 @@
                 margin-right: 24px;
                 width: 2.4rem;
             }
+        }
+    }
+
+    @media only screen and (max-width: $desktop) {
+        ul {
+            height: 240px;
+            li img {
+                margin-right: 18px;
+                width: 1.4rem;
+            }
+        }
+    }
+
+    @media only screen and (max-width: $mobile) {
+        padding-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100vw;
+
+        &__list {
+            padding: 0 10vw;
+        }
+        h2 {
+            width: 100%;
+            transform: none;
+            line-height: 100%;
+            text-align: center;
+        }
+        ul {
+            height: 160px;
+        }
+        .hidden {
+            display: none;
         }
     }
 }

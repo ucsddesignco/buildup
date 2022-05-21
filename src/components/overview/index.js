@@ -6,7 +6,7 @@ import Arrow from '../../assets/images/arrow.svg'
 const Overview = () => {
   return (
     <section className="overview">
-        <h2>Over<br/>view</h2>
+        <h2>Over<br className="hidden"/>view</h2>
         <div className="overview__list">
             <ul>
                 <li><img src={Arrow} alt="Arrow Bullet"/>June 28 - September 3, 2021</li>
