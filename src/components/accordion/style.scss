@@ -6,17 +6,20 @@
     background-color: #E7E5D1;
 
     .faq {
-      border-top: 1.5px solid #424242;
-      padding: 1.5rem 8vw;
+      border-top: $desktop-stroke;
+      padding: 1.5rem $desktop-padding;
       cursor: pointer;
       color: #424242;
+
+      @media (max-width: $mobile) {
+        border-top: $mobile-stroke;
+      }
 
       .faq-question {
         position: relative;
         font-size: 1.5rem;
         padding-right: 80px;
         font-family: $p-font;
-        font-size: 1.5rem;
         font-weight: 500;
       
         transition: all 0.2s ease;
@@ -61,7 +64,7 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: mobile) {
     #faq {
       padding-top: 3.5rem;
     }

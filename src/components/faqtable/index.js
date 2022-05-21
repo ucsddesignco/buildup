@@ -8,8 +8,8 @@ function FaqTable({ faq, index, toggleFAQ }) {
       key={index}
       onClick={() => toggleFAQ(index)}
     >
-      <div className="faq-question">{faq.question}</div>
-      <div className="faq-answer">{faq.answer}</div>
+      <div className="faq-question"><p>{faq.question}</p></div>
+      <div className="faq-answer"><p>{faq.answer}</p></div>
     </div>
   );
 }

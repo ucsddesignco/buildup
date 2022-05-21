@@ -7,7 +7,7 @@ const FAQ = () => {
   return (
     <div className='faq' id='faq-section' >
       <div className="heading">
-        <h1>FAQ</h1>
+        <h2>FAQ</h2>
         <img src={Shapes} alt="" />
       </div>
       

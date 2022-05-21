@@ -6,8 +6,9 @@
     justify-content: space-between;
     align-items: center;
     background-color: #E7E5D1;
-    padding: 4rem 8vw;
-    border-top: 1.5px solid #000;
+    padding: 4rem $desktop-padding;
+    border-top: $desktop-stroke;
+    background-image: url("../../assets/images/website_texture.png");
 
     .footer-left {
         display: flex;
@@ -36,8 +37,9 @@
         }
     }
 
-    @media only screen and (max-width: 700px) {
-        padding: 2rem 8vw;
+    @media only screen and (max-width: $mobile) {
+        padding: 2rem $mobile-padding;
+        border-top: $mobile-stroke;
 
         .footer-left {
             p {
