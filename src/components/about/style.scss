@@ -21,15 +21,21 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 2rem;
+  padding-bottom: 5vw;
+
+  .rect {
+    height: 5.5vw;
+    width: 11.2vw;
+   
+  }
   .circle {
-    border: $desktop-stroke;
+    border: $mobile-stroke;
     border-radius: 50%;
     background-color: #9BB7FF;
     height: 5vw;
     width: 5vw;
-    margin-left: -0.25px;
-    margin-right: -0.25px;
+    margin-left: -0.5px;
+    margin-right: -0.5px;
 
   }
   #circle1 {
@@ -47,10 +53,13 @@ html {
     0% {
       border-radius: 100%;
     }
-    20% {
+    25% {
       border-radius: 0%;
     }
-    40% {
+    50% {
+      border-radius: 0%;
+    }
+    75% {
       border-radius: 100%;
     }
   }
@@ -67,13 +76,16 @@ html {
   }
   
   @keyframes trans3 {
-    47% {
+    0% {
       border-radius: 100%;
     }
-    67% {
+    25% {
       border-radius: 0%;
     }
-    87% {
+    50% {
+      border-radius: 0%;
+    }
+    75% {
       border-radius: 100%;
     }
   }
@@ -81,12 +93,12 @@ html {
 
 
   .oval {
-    border: $desktop-stroke;
+    border: $mobile-stroke;
     background-color: #43A047;
     height: 5vw;
     width: 10vw;
-    margin-left: -0.25px;
-    margin-right: -0.25px;
+    margin-left: -0.5px;
+    margin-right: -0.5px;
     border-radius: 25%/50%;
   }
 
@@ -102,15 +114,31 @@ html {
   }
   
   @keyframes trans2 {
-    33% {
+    0% {
+      width: 11vw;
       border-radius: 25%/50%;
     }
-    43% {
-      border-radius: 0%;
+    15% {
+      transform: translate3d(0, 0, 0);
+      width: 5.5vw;
+      border-radius: 100%;
     }
-    53% {
+    35% {
+      width: 5.5vw;
+      transform: translate3d(5.5vw, 0, 0);
+      border-radius: 100%;
+    }
+    55% {
+      width: 5.5vw;
+      transform: translate3d(0, 0, 0);
+      border-radius: 100%;
+    }
+    70% {
       border-radius: 25%/50%;
+      width: 11vw;
+
     }
+
   }
 
   #oval2 {
@@ -123,26 +151,42 @@ html {
     animation-fill-mode: none;
     animation-play-state: running;
   }
-  
   @keyframes trans4 {
-    80% {
+    0% {
+      width: 11vw;
       border-radius: 25%/50%;
     }
-    90% {
-      border-radius: 0%;
+    15% {
+      transform: translate3d(5.5vw, 0, 0);
+      width: 5.5vw;
+      border-radius: 100%;
     }
-    100% {
+    35% {
+      width: 5.5vw;
+      transform: translate3d(0, 0, 0);
+      border-radius: 100%;
+    }
+    55% {
+      width: 5.5vw;
+      transform: translate3d(5.5vw, 0, 0);
+      border-radius: 100%;
+      position: relative;
+    }
+    70% {
+      transform: translate3d(0, 0, 0);
       border-radius: 25%/50%;
+      width: 11vw;
     }
+
   }
 
 
   .square {
-    border: #424242 solid 2px;
+    border: $mobile-stroke;
     height: 5vw;
     width: 5vw;
-    margin-left: -0.25px;
-    margin-right: -0.25px;
+    margin-left: -0.5px;
+    margin-right: -0.5px;
   }
 }
 
@@ -161,7 +205,7 @@ html {
   #right {
     margin-top: -0.5em;
     text-align: end;
-    margin-right: -1.2rem;
+    margin-right: -0.4rem;
     padding-top: 0rem; 
   }
 }
@@ -169,19 +213,27 @@ html {
 .body {
   text-align: justify;
   font-family: $p-font;
+  display: flex;
+  flex-direction: column;
   
   
   #leftText {
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: $mobile-padding;
+    padding-right: $mobile-padding;
     padding-top: 1vh;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1.2rem;
   }
   #rightText {
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: $mobile-padding;
+    padding-right: $mobile-padding;
     padding-top: 1vh;
     margin-bottom: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5vw;
   }
 }
 
@@ -195,19 +247,10 @@ html {
       margin-right: -0.5rem;
     }
   }
-  .body {
-    #leftText {
-      margin-bottom: 3.5rem;
-    }
-
-    #rightText {
-      margin-bottom: 3.4rem;
-    }
-  }
  
 }
 
-@media screen and (min-width: 501px) {
+@media screen and (min-width: $mobile) {
   .title {
     #left {
       margin-left: -0.7rem;
@@ -217,18 +260,11 @@ html {
       margin-right: -0.7rem;
     }
   }
-  .body {
-    #leftText {
-      margin-bottom: 4.6rem;
-    }
-    #rightText {
-      margin-bottom: 3.6rem;
-    }
-  }
- 
 }
+  
+ 
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: $desktop) {
     
   .title {
     margin-bottom: 3.75rem;
@@ -253,19 +289,20 @@ html {
   
   .body {
     display: flex;
+    flex-direction: row;
     p {  
       width: 42vw;
       margin-left: 1rem;
     }
     #leftText {
-      padding-left: 4vw;
-      padding-right: 2vw;
-      margin-bottom: 0px;
+      padding-left: $desktop-padding;
+      padding-right: $desktop-padding/2;
+      margin-bottom: 4vw;
     }
     #rightText {
-      padding-left: 2vw;
-      padding-right: 4vw;
-      margin-bottom: 0px;
+      padding-left: $desktop-padding/2;
+      padding-right: $desktop-padding;
+      margin-bottom: 4vw;
     }
   
 
@@ -274,33 +311,85 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 0vw;
-    padding-top: 3.75rem;
-    padding-bottom: 3.75rem;
+    padding-bottom: 4.4vw;
+    padding-top: 1vw;
     .circle {
-      border: #424242 solid 2px;
+      border: $desktop-stroke;
       border-radius: 50%;
       background-color: #9BB7FF;
-      height: 5vw;
-      width: 5vw;
-      margin-left: -0.5px;
-      margin-right: -0.5px;
+      height: 5.5vw;
+      width: 5.5vw;
+      margin-left: -1px;
+      margin-right: -1px;
+  
     }
+    #circle1 {
+      animation-name: trans1;
+      animation-duration: 4s; 
+      animation-timing-function: linear; 
+      animation-delay: 2s;
+      animation-direction: normal;
+      animation-iteration-count: infinite;
+      animation-fill-mode: none;
+      animation-play-state: running;
+    }
+    
+    #circle2 {
+      animation-name: trans3;
+      animation-duration: 4s; 
+      animation-timing-function: linear; 
+      animation-delay: 1s;
+      animation-direction: normal;
+      animation-iteration-count: infinite;
+      animation-fill-mode: none;
+      animation-play-state: running;
+    }
+    
     .oval {
-      border: #424242 solid 2px;
+      border: $desktop-stroke;
       background-color: #43A047;
-      height: 5vw;
-      width: 10vw;
-      margin-left: -0.5px;
-      margin-right: -0.5px;
+      height: 5.5vw;
+      width: 11vw;
+      margin-left: -1px;
+      margin-right: -1px;
       border-radius: 25%/50%;
     }
+  
+    #oval1 {
+      animation-name: trans2;
+      animation-duration: 5s; 
+      animation-timing-function: linear; 
+      animation-delay: 3s;
+      animation-direction: normal;
+      animation-iteration-count: infinite;
+      animation-fill-mode: none;
+      animation-play-state: running;
+    }
+    
+    
+    
+  
+    #oval2 {
+      animation-name: trans4;
+      animation-duration: 5s; 
+      animation-timing-function: linear; 
+      animation-delay: 2s;
+      animation-direction: normal;
+      animation-iteration-count: infinite;
+      animation-fill-mode: none;
+      animation-play-state: running;
+      direction: rtl;
+      float: left;
+      align-items: stretch;
+    }
+    
+    
     .square {
-      border: #424242 solid 2px;
-      height: 5vw;
-      width: 5vw;
-      margin-left: -0.5px;
-      margin-right: -0.5px;
+      border: $desktop-stroke;
+      height: 5.5vw;
+      width: 5.5vw;
+      margin-left: -1px;
+      margin-right: -1px;
     }
   }
   

@@ -12,7 +12,10 @@ const WhyApply = () => {
                         <div className='square'></div>
                         <div className='square'></div>
                         <div className='square'></div>
-                        <div className='oval' id='oval1'></div>
+                        <div className='rect'>
+                            <div className='oval' id='oval1'></div>
+                        </div>
+                        
                     </div>
                     <div className='row'>
                         <div className='square'></div>
@@ -24,7 +27,10 @@ const WhyApply = () => {
                     </div>
                     <div className='row'>
                         <div className='square'></div>
-                        <div className='oval' id='oval2'></div>
+                        <div className='rect'>
+                            <div className='oval' id='oval2'></div>
+                        </div>
+                       
                         <div className='square'></div>
                         <div className='square'></div>
                     </div>
