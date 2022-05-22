@@ -21,7 +21,7 @@ const Box = ({ id, ...restProps }) => {
       <meshBasicMaterial
         // transparent
         // opacity={isHovered ? 1 : 0}
-        color={isHovered ? color : "white"}
+        color={isHovered ? color : "#E7E5D1"}
       />
 
       <Edges />

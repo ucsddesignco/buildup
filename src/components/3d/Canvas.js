@@ -4,7 +4,7 @@ import { OrbitControls, OrthographicCamera } from "@react-three/drei";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 const Canvas = ({ children, zoomFactor }) => {
-  const zoom = 0.9;
+  const zoom = 0.8;
   const { height, width, dpr } = useWindowDimensions();
 
   return (
