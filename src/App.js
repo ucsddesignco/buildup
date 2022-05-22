@@ -6,6 +6,8 @@ import FAQ from "./components/faq";
 import Hero from "./components/hero";
 import WhyApply from "./components/whyapply";
 import About from "./components/about";
+import Overview from './components/overview';
+import Themes from './components/themes';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Hero />
       <Navbar />
       <About />
+      <Overview />
+      <Themes />
       <WhyApply />
       <FAQ />
       <Footer />

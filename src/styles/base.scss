@@ -1,5 +1,7 @@
 $primary-color: #424242;
 $secondary-color: #E7E5D1;
+$accent-color-1: #9BB7FF;
+$accent-color-2: #43A047;
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
@@ -31,6 +33,10 @@ body {
     background-color: $secondary-color;
 }
 
+$mobile: 600px;
+
+$desktop: 960px;
+
 $heading-font: "Neue Plak";
 
 $p-font: "Space Grotesk";
@@ -39,7 +45,39 @@ $sub-font: "Inter";
 
 $link-font: "NB International Mono";
 
+$desktop-padding: 8vw;
+
+$mobile-padding: 10vw;
+
+$desktop-stroke: 2px #424242 solid;
+
+$mobile-stroke: 1px #424242 solid;
+
 h1 {
     color: $primary-color;
     font-family: $heading-font;
+    font-size: clamp(60px, 25vw, 300px);
 }
+
+h2 {
+    color: $primary-color;
+    font-family: $heading-font;
+    font-size: clamp(48px, 12vw, 160px);
+    line-height: 90%;
+    text-transform: uppercase;
+}
+
+p,
+li {
+    color: $primary-color;
+    font-family: $p-font;
+    font-size: 0.8rem;
+
+    @media only screen and (min-width: $mobile) {
+        font-size: 1.2rem;
+    }
+    @media only screen and (min-width: $desktop) {
+        font-size: 1.5rem;
+    }
+}
+
