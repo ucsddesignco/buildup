@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    background-color: #E7E5D1;
+    background-color: $secondary-color;
     background-image: url("../../assets/images/website_texture.png");
     background-repeat: repeat;
 
@@ -15,6 +15,95 @@
         align-items: center;
         padding: 4rem $desktop-padding 3.75rem;
 
+        .shape {
+            display: flex;
+            flex-direction: column;
+
+            .row {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+    
+                .square {
+                    border: $desktop-stroke;
+                    height: 5.5vw;
+                    width: 5.5vw;
+                    margin: -0.5px;
+                }
+                
+                .circle {
+                    border: $desktop-stroke;
+                    border-radius: 50%;
+                    background-color: #9BB7FF;
+                    height: 5.5vw;
+                    width: 5.5vw;
+                    margin: -0.5px;
+                }
+    
+                .oval {
+                    border: $desktop-stroke;
+                    background-color: #43A047;
+                    height: 5.5vw;
+                    width: 11vw;
+                    margin: -0.5px 0px;
+                    border-radius: 25%/50%;
+                }
+    
+                #circle1 {
+                    animation-name: trans3;
+                    animation-duration: 4s; 
+                    animation-timing-function: linear; 
+                    animation-delay: 0;
+                    animation-direction: normal;
+                    animation-iteration-count: infinite;
+                    animation-fill-mode: none;
+                    animation-play-state: running;
+                }
+
+                #circle2 {
+                  animation-name: trans3;
+                  animation-duration: 4s; 
+                  animation-timing-function: linear; 
+                  animation-delay: 2s;
+                  animation-direction: normal;
+                  animation-iteration-count: infinite;
+                  animation-fill-mode: none;
+                  animation-play-state: running;
+              }
+
+                .rect {
+                  display: flex;
+                  align-items: center;
+                  position: inherit;  
+                  height: 5.4vw;
+                  width: 11.5vw;
+  
+                }
+                  
+                @keyframes trans3 {
+                    47% {
+                      border-radius: 100%;
+                    }
+                    67% {
+                      border-radius: 0%;
+                    }
+                    87% {
+                      border-radius: 100%;
+                    }
+                }
+    
+                #oval1 {
+                    animation-name: trans2;
+                    animation-duration: 4s; 
+                    animation-timing-function: linear; 
+                    animation-delay: 0;
+                    animation-direction: normal;
+                    animation-iteration-count: infinite;
+                    animation-fill-mode: none;
+                    animation-play-state: running;
+                }
+            }
+        }
         img {
             width: 35vw;
             object-fit: contain;
@@ -25,6 +114,23 @@
     @media only screen and (max-width: $mobile) {
         .heading {
             padding: 2rem $mobile-padding 1rem;
+
+            .shape {
+              .row {
+                .square {
+                  border: $mobile-stroke;
+                }
+                .circle {
+                  border: $mobile-stroke;
+                }
+                .oval {
+                  border: $mobile-stroke;
+                }
+                .rect {
+                  width: 11.3vw;
+                }
+              }
+            }
 
             img {
                 width: 35vw;
