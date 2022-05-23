@@ -78,7 +78,7 @@
 
   #oval1 {
     animation-name: trans2;
-    animation-duration: 4s; 
+    animation-duration: 2s; 
     animation-timing-function: linear; 
     animation-delay: 0;
     animation-direction: normal;
@@ -103,7 +103,7 @@
 
   #oval2 {
     animation-name: trans4;
-    animation-duration: 6s; 
+    animation-duration: 2s; 
     animation-timing-function: linear; 
     animation-delay: 0;
     animation-direction: normal;
