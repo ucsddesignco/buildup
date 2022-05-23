@@ -1,6 +1,10 @@
 import React from 'react';
 import './style.scss';
 import Arrow from "../../assets/images/arrow.svg";
+import Google from "../../assets/images/Google-logo.png";
+import Amazon from "../../assets/images/Amazon-logo.png";
+import Microsoft from "../../assets/images/Microsoft-logo.png";
+import Sony from "../../assets/images/Sony-logo.png";
 
 const WhyApply = () => {
     return (
@@ -86,7 +90,7 @@ const WhyApply = () => {
                 </p>
             </div>
 
-            <h3 className='subtitle'>
+            <h3 className='subtitle1'>
                 Here’s what previous participants of Level Up and Power Up have to 
                 say about the program:
             </h3>
@@ -104,6 +108,16 @@ const WhyApply = () => {
 
                 — Adrian Valdez, Power Up participant
             </p>
+
+            <h3 className='subtitle2'>
+                Here’s what previous participants of Level Up and Power Up now work at:
+            </h3>
+            <div className='social-proof'>
+                <img src={Google} />
+                <img src={Amazon} />
+                <img src={Microsoft} />
+                <img src={Sony} />
+            </div>
       </div>
     )
   }
