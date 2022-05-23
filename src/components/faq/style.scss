@@ -14,7 +14,10 @@
         justify-content: space-between;
         align-items: center;
         padding: 4rem $desktop-padding 3.75rem;
-
+        
+        h2 {
+          padding-bottom: 2rem;
+        }
         .shape {
             display: flex;
             flex-direction: column;
@@ -113,7 +116,7 @@
 
     @media only screen and (max-width: $mobile) {
         .heading {
-            padding: 2rem $mobile-padding 1rem;
+            padding: 4rem $mobile-padding 1rem;
 
             .shape {
               .row {

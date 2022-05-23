@@ -46,8 +46,8 @@ const Hero = () => {
           <h1
             style={{
               lineHeight: 0.8,
-              fontFamily: "Neue Plak W01",
-              fontSize: "clamp(64px,20vw,300px)",
+              fontFamily: "Neue Plak",
+              fontSize: "clamp(64px,12vw,200px)",
               textAlign: "left",
               textTransform: "uppercase",
             }}
@@ -59,8 +59,8 @@ const Hero = () => {
           <h1
             style={{
               lineHeight: 0.8,
-              fontFamily: "Neue Plak W01",
-              fontSize: "clamp(64px,20vw,300px)",
+              fontFamily: "Neue Plak",
+              fontSize: "clamp(64px,12vw,300px)",
               textAlign: "left",
               textTransform: "uppercase",
             }}

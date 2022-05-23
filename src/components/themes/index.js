@@ -1,13 +1,27 @@
 import React from 'react'
 import './style.scss';
 
+import Theme1Visual from '../../assets/images/theme1-visual.svg';
+import Theme2Visual from '../../assets/images/theme2-visual.svg';
+import Theme3Visual from '../../assets/images/theme3-visual.svg';
+
 const themes = [
     {
         theme: "LGBTQ+ Safety",
         description: [
             "LGBTQ+ are discriminated against in all areas of public and private life individuals face a disproportionate amount of discrimination and challenges in all areas of public and private life. These organizations work to support more inclusive spaces and practices for the community.",
             "How might we increase engagement for nonprofits/institutions that advocate for the welfare of LGBTQ+ people in order to create a more compassionate environment?"
-        ]
+        ],
+        // partners: [
+        //     {
+        //         name: "Partner Name",
+        //         link: "#"
+        //     },
+        //     {
+        //         name: "Partner Name",
+        //         link: "#"
+        //     }
+        // ]
     },
     {
         theme: "Empowerment of Women",
@@ -32,42 +46,62 @@ const Themes = () => {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id laoreet faucibus placerat volutpat aliquam. Orci ut ultricies ac mi. Est, amet, viverra interdum eu mattis lobortis felis.</p>
         <div className="themes__wrapper">
         {
-            themes.map((obj, idx) => (
-                <div className="themes__section">
-                    <div className="themes__section__header">
-                        <div className="themes__section__header__title">
-                            <span>{`{${obj.theme}}`}</span>
-                        </div>
-                        <div className="themes__section__header__detail">
-                            <div>
-                                <div></div>
+            themes.map((obj, idx) => {
+                let themeVisual;
+                switch (idx) {
+                    case 1:
+                        themeVisual = Theme2Visual;
+                        break;
+                    case 2:
+                        themeVisual = Theme3Visual;
+                        break;
+                    default:
+                        themeVisual = Theme1Visual;
+                        break;
+                }
+                return (
+                    <div className="themes__section">
+                        <div className="themes__section__header">
+                            <div className="themes__section__header__title">
+                                <span>{obj.theme}</span>
                             </div>
-                            <div>
-                                <span>Website</span>
+                            <div className="themes__section__header__detail">
+                                <div>
+                                    <img src={themeVisual} alt={`Visual for Theme ${idx - 1}`} />
+                                </div>
+                                <div>
+                                    <ul>
+                                        {
+                                            obj.partners && obj.partners.map((partner) => (
+                                                <li><a href={partner.link}>{partner.name}</a></li>
+                                            ))
+                                        }
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="themes__section__description">
-                        <ul>
-                            {
-                                obj.description.map((bullet) => (
-                                    <li>{bullet}</li>
-                                ))
-                            }
-                        </ul>
-                    </div>
-                    <div className={`themes__section__spacer${idx % 2 === 0 ? "-hidden" : ""}`}></div>
-                    <div className={`shapes ${idx % 2 !== 0 ? "right" : ""}`}>
-                        <div className="rect">
-                            <div className="oval" id="oval1"></div>
+                        <div className="themes__section__description">
+                            <ul>
+                                {
+                                    obj.description.map((bullet) => (
+                                        <li>{bullet}</li>
+                                    ))
+                                }
+                            </ul>
                         </div>
-                        <div className="square" id="square2"></div>
-                        <div className="square"></div>
-                        <div className="circle" id="circle2"></div>
-                        <div className="square"></div>
+                        <div className={`themes__section__spacer${idx % 2 === 0 ? "-hidden" : ""}`}></div>
+                        <div className={`shapes ${idx % 2 !== 0 ? "right" : ""} ${idx === themes.length - 1 ? "hidden" : ""}`}>
+                            <div className="rect">
+                                <div className="oval" id="oval1"></div>
+                            </div>
+                            <div className="square" id="square2"></div>
+                            <div className="square"></div>
+                            <div className="circle" id="circle2"></div>
+                            <div className="square"></div>
+                        </div>
                     </div>
-                </div>
-            ))
+                )
+            })
         }
         </div>
     </section>

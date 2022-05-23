@@ -6,7 +6,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem $desktop-padding;
+    height: 6rem;
+    padding: 0 $desktop-padding;
     background-image: url("../../assets/images/website_texture.png");
     border-bottom: $desktop-stroke;
     position: fixed;
