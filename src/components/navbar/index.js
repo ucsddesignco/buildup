@@ -35,13 +35,13 @@ const Navbar = () => {
         </a>
         <ul>
           <li>
-            <a href="">{OVERVIEW}</a>
+            <a href="#overview-section">{OVERVIEW}</a>
           </li>
           <li>
-            <a href="">PARTNERS</a>
+            <a href="#partner-section">PARTNERS</a>
           </li>
           <li>
-            <a href="">BENEFITS</a>
+            <a href="#benefits-section">BENEFITS</a>
           </li>
           <li>
             <a href="#faq-section">FAQ</a>

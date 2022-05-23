@@ -41,7 +41,7 @@ const themes = [
 
 const Themes = () => {
   return (
-    <section className="themes">
+    <section className="themes" id='partner-section'>
         <h2>Central Themes</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id laoreet faucibus placerat volutpat aliquam. Orci ut ultricies ac mi. Est, amet, viverra interdum eu mattis lobortis felis.</p>
         <div className="themes__wrapper">

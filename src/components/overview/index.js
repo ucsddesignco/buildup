@@ -5,7 +5,7 @@ import Arrow from "../../assets/images/arrow.svg";
 
 const Overview = () => {
   return (
-    <section className="overview">
+    <section className="overview" id='overview-section'>
       <h2>
         Over
         <br className="hidden" />

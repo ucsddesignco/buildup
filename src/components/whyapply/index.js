@@ -8,7 +8,7 @@ import Sony from "../../assets/images/Sony-logo.png";
 
 const WhyApply = () => {
     return (
-      <div className='grid'>
+      <div className='grid' id='benefits-section'>
             <div className='big-title'>
                 <div className='blocks'>
                     <div className='row'>
