@@ -8,6 +8,12 @@
     justify-content: space-between;
     padding: 2rem $desktop-padding;
     background-image: url("../../assets/images/website_texture.png");
+    border-bottom: $desktop-stroke;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 84vw;
+    z-index: 200;
 
     img {
         height: 3rem;
@@ -30,12 +36,16 @@
                 color: #424242;
             }
             .pill {
+                border-radius: 200px;
+                border: $desktop-stroke;
                 
                 a {
-                    border-radius: 200px;
-                    border: $desktop-stroke;
+                    
                     padding: 0.5rem 1.25rem;
                 }
+            }
+            .pill:hover {
+                background-color: #9BB7FF;
             }
         }
     }

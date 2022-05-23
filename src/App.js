@@ -1,13 +1,13 @@
 import logo from "./logo.svg";
-import "./App.css";
+import "./styles/main.scss";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import FAQ from "./components/faq";
 import Hero from "./components/hero";
 import WhyApply from "./components/whyapply";
 import About from "./components/about";
-import Overview from './components/overview';
-import Themes from './components/themes';
+import Overview from "./components/overview";
+import Themes from "./components/themes";
 
 function App() {
   return (
