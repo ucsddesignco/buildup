@@ -5,13 +5,14 @@
   grid-template-columns: 1fr;
   grid-row-gap: 2rem;
   padding: 4rem 10vw;
-  border-top: solid 1px $primary-color;
-  border-bottom: solid 1px $primary-color;
+  border-top: solid 2px $primary-color;
+  border-bottom: solid 2px $primary-color;
   text-align: left;
   font-family: $p-font;
   background-repeat: repeat;
   background-image: url("../../assets/images/website_texture.png");
   overflow-x: hidden;
+
   .big-title {
     display: flex;
     align-items: center;
@@ -124,7 +125,6 @@
 
     h2 {
       text-align: right;
-      margin-right: -8vw;
     }
   }
 
@@ -159,10 +159,29 @@
 
   .text-block2 {
     margin-left: auto;
+    margin-right: 10vw;
   }
 
-  .subtitle {
+  .subtitle1, .subtitle2 {
     margin-top: 2rem;
+    margin-right: 10vw;
+  }
+
+  .testimony1, .testimony2 {
+    margin-right: 10vw;
+  }
+
+  .social-proof {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 10vw;
+
+    img {
+        width: 36vw;
+    }
   }
 }
 
@@ -243,7 +262,7 @@
       }
     }
 
-    .subtitle {
+    .subtitle1 {
       grid-row-start: 5;
       grid-column-start: 2;
       grid-column-end: span 10;
@@ -262,6 +281,26 @@
       grid-column-start: 8;
       grid-column-end: span 4;
       margin: 0;
+    }
+
+    .subtitle2 {
+        grid-row-start: 8;
+        grid-column-start: 2;
+        grid-column-end: span 10;
+        margin: 0;
+        text-align: center;
+    }
+
+    .social-proof {
+        grid-row-start: 9;
+        grid-column-start: 1;
+        grid-column-end: span 12;
+        margin: 0;
+        justify-content: space-evenly;
+
+        img {
+            width: 16vw;
+        }
     }
   }
 }
