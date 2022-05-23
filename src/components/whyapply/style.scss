@@ -11,7 +11,6 @@
   font-family: $p-font;
   background-repeat: repeat;
   background-image: url("../../assets/images/website_texture.png");
-  overflow-x: hidden;
 
   .big-title {
     display: flex;
@@ -32,111 +31,41 @@
       .rect {
         display: flex;
         align-items: center;
-        flex-direction: row;
+        position: inherit;
+        height: 5.4vw;
+        width: 11.234vw;
+      }
 
-        .row {
-          display: flex;
-          align-items: center;
-          flex-direction: row;
+      .circle {
+        border: $primary-color solid 1px;
+        border-radius: 50%;
+        background-color: #9bb7ff;
+        height: 5.5vw;
+        width: 5.5vw;
+      }
 
-          .square {
-            border: $primary-color solid 1px;
-            height: 5.5vw;
-            width: 5.5vw;
-            margin: -0.5px;
-          }
-          .rect {
-            display: flex;
-            align-items: center;
-            position: inherit;
-            height: 5.5vw;
-            width: calc(11vw + 4px);
-          }
+      .oval {
+        border: $primary-color solid 1px;
+        background-color: #43a047;
+        height: 5.5vw;
+        width: 11vw;
+        border-radius: 25%/50%;
+      }
 
-          .circle {
-            border: $primary-color solid 1px;
-            border-radius: 50%;
-            background-color: #9bb7ff;
-            height: 5.5vw;
-            width: 5.5vw;
-          }
+      .circle {
+        animation-name: trans3;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-delay: 0;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+        animation-fill-mode: none;
+        animation-play-state: running;
+      }
 
-          .oval {
-            border: $primary-color solid 1px;
-            background-color: #43a047;
-            height: 5.5vw;
-            width: 11vw;
-            border-radius: 25%/50%;
-          }
-
-          .circle {
-            animation-name: trans3;
-            animation-duration: 4s;
-            animation-timing-function: linear;
-            animation-delay: 0;
-            animation-direction: normal;
-            animation-iteration-count: infinite;
-            animation-fill-mode: none;
-            animation-play-state: running;
-          }
-
-          @keyframes trans3 {
-            47% {
-              border-radius: 100%;
-            }
-            67% {
-              border-radius: 0%;
-            }
-            87% {
-              border-radius: 100%;
-            }
-          }
-
-          #oval1 {
-            animation-name: trans2;
-            animation-duration: 4s;
-            animation-timing-function: linear;
-            animation-delay: 0;
-            animation-direction: normal;
-            animation-iteration-count: infinite;
-            animation-fill-mode: none;
-            animation-play-state: running;
-          }
-
-          @keyframes trans2 {
-            33% {
-              border-radius: 25%/50%;
-            }
-            43% {
-              border-radius: 0%;
-            }
-            53% {
-              border-radius: 25%/50%;
-            }
-          }
-
-          #oval2 {
-            animation-name: trans4;
-            animation-duration: 4s;
-            animation-timing-function: linear;
-            animation-delay: 0;
-            animation-direction: normal;
-            animation-iteration-count: infinite;
-            animation-fill-mode: none;
-            animation-play-state: running;
-          }
-
-          @keyframes trans4 {
-            80% {
-              border-radius: 25%/50%;
-            }
-            90% {
-              border-radius: 0%;
-            }
-            100% {
-              border-radius: 25%/50%;
-            }
-          }
+      @keyframes trans3 {
+        47% {
+          border-radius: 100%;
         }
         67% {
           border-radius: 0%;
