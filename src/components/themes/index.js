@@ -58,7 +58,9 @@ const Themes = () => {
                     </div>
                     <div className={`themes__section__spacer${idx % 2 === 0 ? "-hidden" : ""}`}></div>
                     <div className={`shapes ${idx % 2 !== 0 ? "right" : ""}`}>
-                        <div className="oval" id="oval1"></div>
+                        <div className="rect">
+                            <div className="oval" id="oval1"></div>
+                        </div>
                         <div className="square" id="square2"></div>
                         <div className="square"></div>
                         <div className="circle" id="circle2"></div>
