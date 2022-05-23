@@ -102,7 +102,7 @@
                 height: calc(5vw + 4px);
                 width: calc(10vw + 6px);
             }
-            @keyframes trans2 {
+            @keyframes trans5 {
                 0% {
                   width: calc(10vw - 2px);
                   border-radius: 25%/50%;
@@ -253,7 +253,7 @@
                     border: $mobile-stroke;
                 }
             }
-            @keyframes trans2 {
+            @keyframes trans5 {
                 0% {
                   width: calc(26vw - 2px);
                   border-radius: 25%/50%;
