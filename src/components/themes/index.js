@@ -41,7 +41,7 @@ const themes = [
 
 const Themes = () => {
   return (
-    <section className="themes" id='partner-section'>
+    <section className="themes" id='themes-section'>
         <h2>Central Themes</h2>
         <p>In your application, you’ll be asked to rank the central themes you are most interested in. Learn more about each theme and the missions of the organizations that you’ll be working with.</p>
         <div className="themes__wrapper">
