@@ -11,7 +11,7 @@
   font-family: $p-font;
   background-repeat: repeat;
   background-image: url("../../assets/images/website_texture.png");
-
+  overflow-x: hidden;
   .big-title {
     display: flex;
     align-items: center;
