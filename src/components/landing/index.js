@@ -4,8 +4,8 @@ import Scene3D from "../3d";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 import DCOLogo from "../../assets/images/dco-logo.svg";
-
 import webBg from "../../assets/images/website_texture.png";
+
 import { usePrefersReducedMotion } from "../../hooks/usePrefersReducedMotion";
 
 const Hero = () => {
@@ -19,7 +19,7 @@ const Hero = () => {
   const isWider = width > height;
 
   return (
-    <div
+    <section
       style={{
         paddingTop: 118,
         boxSizing: "border-box",
@@ -30,6 +30,7 @@ const Hero = () => {
         overflowX: "hidden",
       }}
     >
+      {/* Text */}
       <div
         style={{
           position: "relative",
@@ -74,7 +75,7 @@ const Hero = () => {
               display: "flex",
               flexDirection: "column",
               gap: "1vw",
-              transform: "translateY(3vw)",
+              transform: "translateY(5.3vw)",
             }}
           >
             <p>
@@ -85,19 +86,6 @@ const Hero = () => {
             <p>{"{JUNE 27 – SEPT 2}"}</p>
           </div>
         </div>
-        {/* <h1
-          style={{
-            lineHeight: 0.8,
-            fontFamily: "Neue Plak W01",
-            fontSize: "clamp(64px,20vw,300px)",
-            textAlign: "left",
-            textTransform: "uppercase",
-          }}
-        >
-          Build
-          <br />
-          Up
-        </h1> */}
       </div>
       <div>
         <div
@@ -107,7 +95,6 @@ const Hero = () => {
             bottom: 0,
             width: isWider ? "calc(100% - 20vw)" : "100%",
             height: isWider ? "100%" : width,
-            // background: "pink",
             transform: " translateY(-2px)",
           }}
           ref={setTarget}
@@ -123,7 +110,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -5,7 +5,7 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 const Canvas = ({ children, zoomFactor }) => {
   const zoom = 0.83;
-  const { height, width, dpr } = useWindowDimensions();
+  const { dpr } = useWindowDimensions();
 
   return (
     <ThreeCanvas style={{ width: "100%", height: "100%" }} flat dpr={dpr}>

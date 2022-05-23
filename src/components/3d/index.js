@@ -43,6 +43,7 @@ let boxPositions = [
   [1, 0, 1],
   [0, 1, 1],
 ];
+
 boxPositions = boxPositions.map((v) => v.map((w) => w * 1.002));
 
 const Scene3D = ({ zoomFactor }) => {

@@ -3,7 +3,7 @@ import "./styles/main.scss";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import FAQ from "./components/faq";
-import Hero from "./components/hero";
+import Landing from "./components/landing";
 import WhyApply from "./components/whyapply";
 import About from "./components/about";
 import Overview from "./components/overview";
@@ -12,8 +12,8 @@ import Themes from "./components/themes";
 function App() {
   return (
     <div className="App">
-      <Hero />
       <Navbar />
+      <Landing />
       <About />
       <Overview />
       <Themes />
