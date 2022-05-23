@@ -38,10 +38,10 @@ const Navbar = () => {
             <a href="#overview-section">{OVERVIEW}</a>
           </li>
           <li>
-            <a href="#partner-section">PARTNERS</a>
+            <a href="#themes-section">THEMES</a>
           </li>
           <li>
-            <a href="#themes-section">THEMES</a>
+            <a href="#benefits-section">BENEFITS</a>
           </li>
           <li>
             <a href="#faq-section">FAQ</a>
