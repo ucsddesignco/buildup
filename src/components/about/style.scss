@@ -27,7 +27,7 @@ html {
     width: 11.2vw;
   }
   .circle {
-    border: $mobile-stroke;
+    border: $desktop-stroke;
     border-radius: 50%;
     background-color: #9bb7ff;
     height: 5vw;
@@ -88,7 +88,7 @@ html {
   }
 
   .oval {
-    border: $mobile-stroke;
+    border: $desktop-stroke;
     background-color: #43a047;
     height: 5.5vw;
     width: 11vw;
@@ -172,7 +172,7 @@ html {
   }
 
   .square {
-    border: $mobile-stroke;
+    border: $desktop-stroke;
     height: 5vw;
     width: 5vw;
     margin-left: -0.5px;
