@@ -18,8 +18,8 @@ const Canvas = ({ children, zoomFactor }) => {
       />
       {children}
       <OrbitControls
-        autoRotate={true}
-        enableRotate={false}
+        autoRotate={false}
+        enableRotate={true}
         enablePan={false}
         enableZoom={false}
         minPolarAngle={(90 - 35.264) * (Math.PI / 180)}

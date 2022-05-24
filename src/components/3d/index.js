@@ -49,7 +49,11 @@ boxPositions = boxPositions.map((v) => v.map((w) => w * 1.002));
 const Scene3D = ({ zoomFactor }) => {
   return (
     <Canvas zoomFactor={zoomFactor}>
-      <group scale={0.25} position={[0, -0.3, 0]}>
+      <group
+        scale={0.25}
+        position={[0, -0.3, 0]}
+        rotation={[0, 45 * (Math.PI / 180), 0]}
+      >
         {boxPositions.map((v, i) => (
           <Box position={v} key={i} id={i} />
         ))}

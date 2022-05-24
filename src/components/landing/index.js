@@ -27,33 +27,13 @@ const Hero = () => {
         <img src={DCOLogo} />
         <h1 className="firstLine">Build</h1>
         <div className="secondLine">
-          <h1
-            style={{
-              lineHeight: 0.8,
-              fontFamily: "Neue Plak",
-              fontSize: "clamp(64px,12vw,300px)",
-              textAlign: "left",
-              textTransform: "uppercase",
-            }}
-          >
-            Up
-          </h1>
-          <div
-            className="subtitleWrapper"
-            style={{
-              fontFamily: "Space Grotesk",
-              fontSize: 32,
-              fontWeight: 600,
-              display: "flex",
-              flexDirection: "column",
-              gap: "1vw",
-              transform: "translateY(1.75vw)",
-            }}
-          >
+          <h1>Up</h1>
+          <div className="subtitleWrapper">
             <p>
-              First we Leveled Up. Then we  Powered Up.
+              First we <a href="#">Leveled Up</a>. Then we{" "}
+              <a href="#">Powered Up</a>.
               <br />
-              And this summer… we BUILD UP.{" "}
+              And this summer… we BUILD UP.
             </p>
             <p>{"{JUNE 27 – AUG 29}"}</p>
           </div>
