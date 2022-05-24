@@ -23,6 +23,12 @@ function Accordion() {
       open: false,
     },
     {
+      question: "{HOW WILL BUILD UPPERS BE SELECTED?}",
+      answer:
+        "We will be reviewing all the applications holistically and accepting students based on application responses, past experience, and desire to make an impact!",
+      open: false,
+    },
+    {
       question: "{WHO WILL MY MENTORS BE?}",
       answer:
         "More information about mentors will be released in the coming week(s). There will be 6-8 design mentors and 6-8 marketing mentors, with 2-3 mentors assigned to each team.",
@@ -41,7 +47,7 @@ function Accordion() {
     },
     {
       question: "{WHEN IS THE APPLICATION DUE?}",
-      answer: "Monday, June 13 at 11:59PM PT.",
+      answer: "Monday, June 13 at 11:59PM PT. Decisions will be sent out around a week after the application deadline.",
       open: false,
     },
   ]);

@@ -188,6 +188,28 @@
         filter: grayscale(100);
     }
   }
+
+  .bottom-section {
+      margin-right: 10vw;
+  }
+
+  .pill {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+
+    a {
+        font-family: $p-font;
+        font-weight: 500;
+        font-size: 3vh;
+        border-radius: 40px;
+        border: 1.5px solid #424242;
+        padding: 0.5rem 1.25rem;
+        text-decoration: none;
+        color: #424242;
+        background-color: #9bb7ff;
+    }
+  }   
 }
 
 @media only screen and (min-width: $mobile) {
@@ -310,6 +332,10 @@
         img {
             width: 16vw;
         }
+    }
+
+    .bottom-section {
+        display: none;
     }
   }
 }

@@ -114,6 +114,12 @@ const WhyApply = () => {
         <img src={Microsoft} />
         <img src={Sony} />
       </div>
+
+      <div className="bottom-section">
+        <div className="pill">
+            <a href="https://forms.gle/4xnQHHaB26pAqnYm9" target='_blank' rel="noreferrer">APPLY HERE</a>
+        </div>
+      </div>
     </div>
   );
 };
