@@ -15,11 +15,11 @@ const Overview = () => {
         <ul>
           <li>
             <img src={Arrow} alt="Arrow Bullet" />
-            June 28 - September 3, 2021
+            June 27 - August 29, 2022
           </li>
           <li>
             <img src={Arrow} alt="Arrow Bullet" />
-            12-15 hr commitment per week
+            12 - 15 hr commitment per week
           </li>
           <li>
             <img src={Arrow} alt="Arrow Bullet" />
@@ -27,7 +27,7 @@ const Overview = () => {
           </li>
           <li>
             <img src={Arrow} alt="Arrow Bullet" />
-            Help small businesses
+            Help nonprofits
           </li>
         </ul>
       </div>

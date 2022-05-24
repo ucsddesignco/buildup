@@ -38,7 +38,7 @@ const Navbar = () => {
             <a href="#overview-section">{OVERVIEW}</a>
           </li>
           <li>
-            <a href="#partner-section">PARTNERS</a>
+            <a href="#themes-section">THEMES</a>
           </li>
           <li>
             <a href="#benefits-section">BENEFITS</a>
@@ -48,7 +48,7 @@ const Navbar = () => {
           </li>
           <li>
             <div className="pill">
-              <a href="https://forms.gle/4xnQHHaB26pAqnYm9" target='_blank'>APPLY HERE</a>
+              <a href="https://forms.gle/4xnQHHaB26pAqnYm9" target='_blank' rel="noreferrer">APPLY HERE</a>
             </div>
           </li>
         </ul>
@@ -84,7 +84,7 @@ const Navbar = () => {
             </a>
             <div className="border-bottom"></div>
             <div className="pill">
-              <a href="https://forms.gle/4xnQHHaB26pAqnYm9" target='_blank'>APPLY HERE</a>
+              <a href="https://forms.gle/4xnQHHaB26pAqnYm9" target='_blank' rel="noreferrer">APPLY HERE</a>
             </div>
 
             <div className="mobile-footer">
@@ -92,7 +92,7 @@ const Navbar = () => {
                 <p>Made with</p>
                 <div className="footer-logo">
                   <img className='heart-icon' src={Heart} alt="heart-icon"/>
-                  <a href="https://ucsddesign.co/" target="_blank">
+                  <a href="https://ucsddesign.co/" target="_blank" rel="noreferrer">
                     <img className="dco-footer-logo" src={Logo} alt="dco-logo" />
                   </a>
                 </div>

@@ -9,7 +9,7 @@ const themes = [
     {
         theme: "LGBTQ+ Safety",
         description: [
-            "LGBTQ+ are discriminated against in all areas of public and private life individuals face a disproportionate amount of discrimination and challenges in all areas of public and private life. These organizations work to support more inclusive spaces and practices for the community.",
+            "LGBTQ+ individuals face a disproportionate amount of discrimination and challenges in all areas of public and private life. These organizations work to support more inclusive spaces and practices for the community.",
             "How might we increase engagement for nonprofits/institutions that advocate for the welfare of LGBTQ+ people in order to create a more compassionate environment?"
         ],
         // partners: [
@@ -41,9 +41,9 @@ const themes = [
 
 const Themes = () => {
   return (
-    <section className="themes" id='partner-section'>
+    <section className="themes" id='themes-section'>
         <h2>Central Themes</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id laoreet faucibus placerat volutpat aliquam. Orci ut ultricies ac mi. Est, amet, viverra interdum eu mattis lobortis felis.</p>
+        <p>In your application, you’ll be asked to rank the central themes you are most interested in. Learn more about each theme and the missions of the organizations that you’ll be working with.</p>
         <div className="themes__wrapper">
         {
             themes.map((obj, idx) => {
