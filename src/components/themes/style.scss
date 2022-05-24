@@ -80,6 +80,7 @@
             align-items: center;
             ul li {
                 font-size: 1.2rem;
+                margin-bottom: 1rem;
             }
         }
         &__spacer-hidden {
@@ -316,6 +317,10 @@
         &__section__description {
             height: 220px;
             padding: 1rem 2rem;
+
+            ul li {
+                margin-bottom: 0.5rem;
+            }
         }
         ul li {
             font-size: 0.8rem;
