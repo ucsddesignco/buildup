@@ -55,3 +55,20 @@
     }
   }
 }
+
+.scene3Dwrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateY(-2px);
+
+  @media only screen and (max-width: 600px) {
+    pointer-events: none;
+  }
+}
+
+.scene3D {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}

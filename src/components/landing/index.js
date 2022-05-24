@@ -30,8 +30,23 @@ const Hero = () => {
           <h1>Up</h1>
           <div className="subtitleWrapper">
             <p>
-              First we <a href="#">Leveled Up</a>. Then we{" "}
-              <a href="#">Powered Up</a>.
+              First we{" "}
+              <a
+                href="https://levelup.ucsddesign.co/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Leveled Up
+              </a>
+              . Then we{" "}
+              <a
+                href="https://powerup.ucsddesign.co/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Powered Up
+              </a>
+              .
               <br />
               And this summer… we BUILD UP.
             </p>
@@ -44,24 +59,12 @@ const Hero = () => {
         <div
           className="scene3Dwrapper"
           style={{
-            position: "absolute",
-            right: 0,
-            bottom: 0,
             width: isWider ? "calc(100% - 20vw)" : "100%",
             height: isWider ? "100%" : width,
-            transform: " translateY(-2px)",
-            pointerEvents: "none",
           }}
           ref={setTarget}
         >
-          <div
-            className="scene3D"
-            style={{
-              width: "100%",
-              height: "100%",
-              position: "absolute",
-            }}
-          >
+          <div className="scene3D">
             <Scene3D zoomFactor={sceneWidth} />
           </div>
         </div>
