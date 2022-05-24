@@ -24,7 +24,7 @@ html {
 
   .rect {
     height: calc(5.5vw + 2px);
-    width: calc(11vw + 6px);
+    width: calc(11vw + 4px);
   }
   .circle {
     border: $mobile-stroke;
@@ -91,7 +91,7 @@ html {
     border: $mobile-stroke;
     background-color: #43a047;
     height: 5.5vw;
-    width: calc(11vw + 4px);
+    width: calc(11vw + 2px);
     border-radius: 25%/50%;
     margin-left: -0.5px;
     margin-right: -0.5px;
@@ -110,27 +110,27 @@ html {
 
   @keyframes trans2 {
     0% {
-      width: calc(11vw + 4px);
+      width: calc(11vw + 2px);
       border-radius: 25%/50%;
     }
     15% {
-      width: calc(5.5vw + 2px);
+      width: 5.5vw;
       border-radius: 100%;
       transform: translate3d(0, 0, 0);
     }
     35% {
-      width: calc(5.5vw + 2px);
+      width: 5.5vw;
       border-radius: 100%;
       transform: translate3d(5.5vw, 0, 0);
     }
     55% {
-      width: calc(5.5vw + 2px);
+      width: 5.5vw;
       border-radius: 100%;
       transform: translate3d(0, 0, 0);
     }
     70% {
       border-radius: 25%/50%;
-      width: calc(11vw + 4px);
+      width: calc(11vw + 2px);
     }
   }
 
@@ -146,7 +146,7 @@ html {
   }
   @keyframes trans4 {
     0% {
-      width: calc(11vw + 4px);
+      width: calc(11vw + 2px);
       border-radius: 25%/50%;
     }
     15% {
@@ -167,7 +167,7 @@ html {
     70% {
       transform: translate3d(0, 0, 0);
       border-radius: 25%/50%;
-      width: calc(11vw + 4px);
+      width: calc(11vw + 2px);
     }
   }
 
