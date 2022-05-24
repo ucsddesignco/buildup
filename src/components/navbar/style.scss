@@ -99,7 +99,9 @@
             border-top: $mobile-stroke
         }
         .pill {
+            display: flex;
             padding: 4vh 0;
+            align-self: center;
 
             a {
                 font-family: $p-font;
