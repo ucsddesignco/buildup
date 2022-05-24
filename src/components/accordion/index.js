@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import FaqTable from "../faqtable";
-import './style.scss';
+import "./style.scss";
 
 function Accordion() {
   const [faqs, setfaqs] = useState([
@@ -41,7 +41,7 @@ function Accordion() {
     },
     {
       question: "{WHEN IS THE APPLICATION DUE?}",
-      answer: "Monday, June 14 at 11:59PM PT.",
+      answer: "Monday, June 13 at 11:59PM PT.",
       open: false,
     },
   ]);
