@@ -18,7 +18,8 @@ const Canvas = ({ children, zoomFactor }) => {
       />
       {children}
       <OrbitControls
-        autoRotate={false}
+        autoRotate={true}
+        autoRotateSpeed={-0.5}
         enableRotate={true}
         enablePan={false}
         enableZoom={false}

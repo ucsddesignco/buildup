@@ -23,11 +23,49 @@ const Hero = () => {
   return (
     <section class="landing">
       {/* Text */}
-      <div className="landingTextWrapper">
-        <img src={DCOLogo} />
-        <h1 className="firstLine">Build</h1>
-        <div className="secondLine">
-          <h1>Up</h1>
+      <div className="desktopLandingText">
+        <div className="landingTextWrapper">
+          <img src={DCOLogo} />
+          <h1 className="firstLine">Build</h1>
+          <div className="secondLine">
+            <h1>Up</h1>
+            <div className="subtitleWrapper">
+              <p>
+                First we{" "}
+                <a
+                  href="https://levelup.ucsddesign.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Leveled Up
+                </a>
+                . Then we{" "}
+                <a
+                  href="https://powerup.ucsddesign.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Powered Up
+                </a>
+                .
+                <br />
+                And this summer… we BUILD UP.
+              </p>
+              <p>{"{JUNE 27 – AUG 29}"}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mobileLandingText">
+        <div className="landingTextWrapper">
+          <img src={DCOLogo} />
+          <h1>
+            Build
+            <br />
+            Up
+          </h1>
+
           <div className="subtitleWrapper">
             <p>
               First we{" "}
