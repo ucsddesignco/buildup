@@ -78,11 +78,11 @@ const Hero = () => {
             }}
           >
             <p>
-              This summer, we’re debuting our 3rd
+              First we Leveled Up. Then we  Powered Up.
               <br />
-              edition to Level Up and Power Up.{" "}
+              And this summer… we BUILD UP.{" "}
             </p>
-            <p>{"{JUNE 27 – SEPT 2}"}</p>
+            <p>{"{JUNE 27 – AUG 29}"}</p>
           </div>
         </div>
         {/* <h1
