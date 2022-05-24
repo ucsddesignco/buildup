@@ -20,7 +20,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 5vw;
+  padding-bottom: 2rem;
 
   .rect {
     height: calc(5.5vw + 2px);
@@ -181,8 +181,7 @@ html {
 }
 
 .title {
-  padding-top: 0px;
-  padding-top: 1.6rem;
+  padding-top: 4rem;
   margin-bottom: 2rem;
 
   #left {
@@ -222,7 +221,7 @@ html {
     margin-bottom: 2rem;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 5vw;
+    margin-bottom: 2rem;
   }
 }
 
@@ -239,6 +238,8 @@ html {
 
 @media screen and (min-width: $mobile) {
   .title {
+    padding-top: 7.5rem;
+
     #left {
       margin-left: -0.7rem;
     }
