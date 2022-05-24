@@ -36,7 +36,7 @@ const Hero = () => {
           zIndex: 1,
           paddingTop: 60,
           paddingLeft: "8vw",
-          pointerEvents: "none",
+          pointerEvents:'none',
           textAlign: "left",
         }}
       >
@@ -77,8 +77,20 @@ const Hero = () => {
               transform: "translateY(3vw)",
             }}
           >
-            <p>
-              First we Leveled Up. Then we  Powered Up.
+            <p 
+            style={{
+              pointerEvents: 'all',
+            }}>
+              First we &nbsp;
+              <a href="https://levelup.ucsddesign.co/" target='_blank'
+                style={{color:"#424242"}}
+              >
+                Leveled Up
+              </a>
+              . Then we &nbsp;
+              <a href="https://powerup.ucsddesign.co/" target='_blank'
+                style={{color:"#424242"}}
+              >Powered Up</a>.
               <br />
               And this summer… we BUILD UP.{" "}
             </p>
