@@ -122,15 +122,18 @@
               .row {
                 .square {
                   border: $mobile-stroke;
+                  margin: -0.5px;
                 }
                 .circle {
                   border: $mobile-stroke;
+                  margin: -0.5px;
                 }
                 .oval {
                   border: $mobile-stroke;
+                  margin: -0.5px 0px;
                 }
                 .rect {
-                  width: 11.3vw;
+                  width: calc(11vw + 2px);
                 }
               }
             }

@@ -34,7 +34,7 @@
         align-items: center;
         position: inherit;
         height: 5.5vw;
-        width: calc(11vw + 4px);
+        width: calc(11vw + 2px);
       }
 
       .circle {
@@ -43,13 +43,14 @@
         background-color: #9bb7ff;
         height: 5.5vw;
         width: 5.5vw;
+        margin: -0.5px;
       }
 
       .oval {
         border: $primary-color solid 1px;
         background-color: #43a047;
         height: 5.5vw;
-        width: 11vw;
+        width: calc(11vw + 2px);
         border-radius: 25%/50%;
       }
 
@@ -79,8 +80,9 @@
 
   
 
-      #oval2 {
-        animation-name: trans4;
+      #applyoval2 {
+        width: 11vw;
+        animation-name: trans6;
         animation-duration: 4s;
         animation-timing-function: linear;
         animation-delay: 0;
@@ -88,6 +90,33 @@
         animation-iteration-count: infinite;
         animation-fill-mode: none;
         animation-play-state: running;
+      }
+
+      @keyframes trans6 {
+        0% {
+          width: 11vw;
+          border-radius: 25%/50%;
+        }
+        15% {
+          transform: translate3d(5.5vw, 0, 0);
+          width: 5.5vw;
+          border-radius: 100%;
+        }
+        35% {
+          width: 5.5vw;
+          transform: translate3d(0, 0, 0);
+          border-radius: 100%;
+        }
+        55% {
+          width: 5.5vw;
+          transform: translate3d(5.4vw, 0, 0);
+          border-radius: 100%;
+        }
+        70% {
+          transform: translate3d(0, 0, 0);
+          border-radius: 25%/50%;
+          width: 11vw;
+        }
       }
 
   
@@ -111,6 +140,7 @@
     display: flex;
     align-items: center;
     flex-direction: row;
+    overflow: hidden;
 
     img {
       height: 20px;
@@ -151,6 +181,7 @@
 
     img {
         width: 36vw;
+        filter: grayscale(100);
     }
   }
 }
@@ -275,6 +306,21 @@
   }
 }
 
+@media only screen and (min-width: 600px) {
+  .grid {
+    .big-title {
+      .blocks {
+        .row {
+          .rect {
+            width: calc(11vw + 4px);
+          }
+        }
+      }
+    }
+  }
+  
+}
+
 @media only screen and (min-width: $desktop) {
   .grid {
     h3,
@@ -282,4 +328,5 @@
       font-size: 1.5rem;
     }
   }
+
 }
