@@ -32,7 +32,7 @@ const WhyApply = () => {
                     <div className='row'>
                         <div className='square'></div>
                         <div className='rect'>
-                            <div className='oval' id='oval2'></div>
+                            <div className='oval' id='applyoval2'></div>
                         </div>
                        
                         <div className='square'></div>
