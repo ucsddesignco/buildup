@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { useWidth } from "../../hooks/useDimensions";
 import Scene3D from "../3d";
-import useWindowDimensions from "../../hooks/useWindowDimensions";
+import { useWindowDimensions } from "../../hooks/useWindowDimensions";
 
 import DCOLogo from "../../assets/images/dco-logo.svg";
 import webBg from "../../assets/images/website_texture.png";
+
+import "./style.scss";
 
 import { usePrefersReducedMotion } from "../../hooks/usePrefersReducedMotion";
 
@@ -19,43 +21,12 @@ const Hero = () => {
   const isWider = width > height;
 
   return (
-    <section
-      style={{
-        paddingTop: 118,
-        boxSizing: "border-box",
-        height: "calc(100vh)",
-        backgroundImage: `url(${webBg})`,
-        backgroundRepeat: "repeat",
-        borderBottom: "2px solid black",
-        overflowX: "hidden",
-      }}
-    >
+    <section class="landing">
       {/* Text */}
-      <div
-        style={{
-          position: "relative",
-          zIndex: 1,
-          paddingTop: 60,
-          paddingLeft: "8vw",
-          pointerEvents: "none",
-          textAlign: "left",
-        }}
-      >
-        <img src={DCOLogo} style={{ width: "clamp(160px,25vw,300px)" }} />
-        <div>
-          <h1
-            style={{
-              lineHeight: 0.8,
-              fontFamily: "Neue Plak",
-              fontSize: "clamp(64px,12vw,200px)",
-              textAlign: "left",
-              textTransform: "uppercase",
-            }}
-          >
-            Build
-          </h1>
-        </div>
-        <div style={{ display: "flex", alignItems: "center", gap: "3vw" }}>
+      <div className="landingTextWrapper">
+        <img src={DCOLogo} />
+        <h1 className="firstLine">Build</h1>
+        <div className="secondLine">
           <h1
             style={{
               lineHeight: 0.8,
@@ -68,6 +39,7 @@ const Hero = () => {
             Up
           </h1>
           <div
+            className="subtitleWrapper"
             style={{
               fontFamily: "Space Grotesk",
               fontSize: 32,
@@ -75,7 +47,7 @@ const Hero = () => {
               display: "flex",
               flexDirection: "column",
               gap: "1vw",
-              transform: "translateY(5.3vw)",
+              transform: "translateY(1.75vw)",
             }}
           >
             <p>
@@ -87,8 +59,10 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      {/* 3D */}
       <div>
         <div
+          className="scene3Dwrapper"
           style={{
             position: "absolute",
             right: 0,
@@ -96,10 +70,12 @@ const Hero = () => {
             width: isWider ? "calc(100% - 20vw)" : "100%",
             height: isWider ? "100%" : width,
             transform: " translateY(-2px)",
+            pointerEvents: "none",
           }}
           ref={setTarget}
         >
           <div
+            className="scene3D"
             style={{
               width: "100%",
               height: "100%",

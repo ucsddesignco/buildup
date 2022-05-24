@@ -1,11 +1,11 @@
 import React from "react";
 import { Canvas as ThreeCanvas } from "@react-three/fiber";
 import { OrbitControls, OrthographicCamera } from "@react-three/drei";
-import useWindowDimensions from "../../hooks/useWindowDimensions";
+import { useWindowDimensions } from "../../hooks/useWindowDimensions";
 
 const Canvas = ({ children, zoomFactor }) => {
   const zoom = 0.83;
-  const { dpr } = useWindowDimensions();
+  const { height, width, dpr } = useWindowDimensions();
 
   return (
     <ThreeCanvas style={{ width: "100%", height: "100%" }} flat dpr={dpr}>
