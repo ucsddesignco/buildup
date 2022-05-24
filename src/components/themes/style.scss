@@ -102,6 +102,16 @@
                 height: calc(5vw + 4px);
                 width: calc(10vw + 6px);
             }
+            #newoval1 {
+                animation-name: trans5;
+                animation-duration: 4s;
+                animation-timing-function: linear;
+                animation-delay: 0s;
+                animation-direction: normal;
+                animation-iteration-count: infinite;
+                animation-fill-mode: none;
+                animation-play-state: running;
+            }
             @keyframes trans5 {
                 0% {
                   width: calc(10vw - 2px);
@@ -252,6 +262,16 @@
                     width: 14vw;
                     border: $mobile-stroke;
                 }
+            }
+            #newoval1 {
+                animation-name: trans5;
+                animation-duration: 4s;
+                animation-timing-function: linear;
+                animation-delay: 0s;
+                animation-direction: normal;
+                animation-iteration-count: infinite;
+                animation-fill-mode: none;
+                animation-play-state: running;
             }
             @keyframes trans5 {
                 0% {
