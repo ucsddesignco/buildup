@@ -109,7 +109,7 @@
         }
         55% {
           width: 5.5vw;
-          transform: translate3d(5.5vw, 0, 0);
+          transform: translate3d(5.4vw, 0, 0);
           border-radius: 100%;
         }
         70% {
@@ -140,6 +140,7 @@
     display: flex;
     align-items: center;
     flex-direction: row;
+    overflow: hidden;
 
     img {
       height: 20px;
