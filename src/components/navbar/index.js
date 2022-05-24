@@ -62,17 +62,17 @@ const Navbar = () => {
             </a>
               <img src={Cube} className='menu' onClick={closeMenu} />
             </div>
-            <a href="" onClick={closeMenu} >
+            <a href="#overview-section" onClick={closeMenu} >
               <div className="section">
                 <p>OVERVIEW</p>
               </div>
             </a>
-            <a href="" onClick={closeMenu} >
+            <a href="#themes-section" onClick={closeMenu} >
               <div className="section">
-                <p>PARTNERS</p>
+                <p>THEMES</p>
               </div>
             </a>
-            <a href="" onClick={closeMenu} >
+            <a href="#benefits-section" onClick={closeMenu} >
               <div className="section">
                 <p>BENEFITS</p>
               </div>
