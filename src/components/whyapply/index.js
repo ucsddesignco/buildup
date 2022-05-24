@@ -91,7 +91,7 @@ const WhyApply = () => {
             </div>
 
             <h3 className='subtitle1'>
-                Here’s what previous participants of Level Up and Power Up have to 
+                Here’s what previous participants of Power Up have to 
                 say about the program:
             </h3>
             <p className='testimony1'>
@@ -102,11 +102,11 @@ const WhyApply = () => {
                 — Adrian Valdez, Power Up participant
             </p>
             <p className='testimony2'>
-                “You often hear about how group projects suck in college, but having 
-                a group of focused and knowledgeable teammates made the last 10 weeks 
-                a breeze and I appreciate them.” <br></br> <br></br>
+                “It really helped me stay within that realm of sharing designs to a team and 
+                stakeholders which ultimately made me more comfortable in interviewing for 
+                full-time roles at companies.” <br></br> <br></br>
 
-                — Adrian Valdez, Power Up participant
+                — Nicolette Shin, Power Up participant
             </p>
 
             <h3 className='subtitle2'>
