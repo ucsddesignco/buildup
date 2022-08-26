@@ -1,0 +1,165 @@
+@import "../../styles/base.scss";
+
+.showcase {
+  background: $primary-color;
+  padding: 120px;
+  @media only screen and (max-width: 1024px) {
+    padding: 60px;
+  }
+  @media only screen and (max-width: $mobile) {
+    padding: 30px;
+  }
+  overflow-x: hidden;
+}
+
+.showcase__header {
+  display: flex;
+  color: $secondary-color;
+  gap: 30px;
+  h2 {
+    display: inline-block;
+    text-align: center;
+    color: $secondary-color;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      margin-top: -0.2em;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      margin-bottom: 0.2em;
+    }
+  }
+}
+
+.showcase__header__illustration {
+  flex-grow: 0.5;
+  background: purple;
+  position: relative;
+  &::before {
+    content: "";
+    background: seagreen;
+    position: absolute;
+    width: 300%;
+    height: 100%;
+  }
+}
+
+.showcase__header__illustration--left {
+  &::before {
+    right: 0;
+  }
+}
+
+.showcase__header__illustration--right {
+  &::before {
+    left: 0;
+  }
+}
+
+.showcase__teams {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 60px;
+  row-gap: 120px;
+  margin: 120px auto;
+
+  @media only screen and (max-width: 1024px) {
+    margin: 60px auto;
+  }
+  @media only screen and (max-width: $mobile) {
+    margin: 30px auto;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 60px;
+  }
+  @media only screen and (max-width: $mobile) {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
+}
+
+.showcase__team {
+  text-align: justify;
+
+  h3 {
+    font-size: 24px;
+    margin: 20px 0 14px 0;
+    color: $secondary-color;
+  }
+  p {
+    font-size: 20px;
+    color: $secondary-color;
+  }
+}
+
+.showcase__team__photo {
+  background: blue;
+  width: 100%;
+  position: relative;
+  display: block;
+  &::before {
+    content: "";
+    display: block;
+    position: relative;
+    padding-top: 100%;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: green;
+    width: 50px;
+    height: 50px;
+
+    @media only screen and (max-width: $mobile) {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+.showcase__actions {
+  display: flex;
+  @media only screen and (max-width: $mobile) {
+    flex-direction: column;
+  }
+  text-align: center;
+}
+
+.showcase__actions__action {
+  display: block;
+  flex-grow: 0.5;
+  color: $secondary-color;
+  text-transform: uppercase;
+  flex: 1;
+  h3 {
+    font-size: 32px;
+    padding-bottom: 60px;
+  }
+}
+
+.showcase__actions__illustration--vertical {
+  width: 256px;
+  background: gray;
+  @media only screen and (max-width: $mobile) {
+    display: none;
+  }
+}
+
+.showcase__actions__illustration--horizontal {
+  display: none;
+  width: 100%;
+  height: 50px;
+  background: magenta;
+  @media only screen and (max-width: $mobile) {
+    display: block;
+  }
+}

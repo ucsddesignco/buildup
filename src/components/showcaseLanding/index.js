@@ -4,13 +4,12 @@ import Scene3D from "../3d";
 import { useWindowDimensions } from "../../hooks/useWindowDimensions";
 
 import DCOLogo from "../../assets/images/dco-logo.svg";
-import webBg from "../../assets/images/website_texture.png";
 
 import "./style.scss";
 
 import { usePrefersReducedMotion } from "../../hooks/usePrefersReducedMotion";
 
-const Hero = () => {
+const ShowcaseLanding = () => {
   const [target, setTarget] = useState();
   const sceneWidth = useWidth(target);
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -49,9 +48,10 @@ const Hero = () => {
                 </a>
                 .
                 <br />
-                And this summer… we BUILD UP.
+                And this summer… we BUILT UP. Check out the Builders' work
+                below.
               </p>
-              <p>{"{JUNE 27 – SEPT 2}"}</p>
+              <p>{"{JUNE 27 – SEP 2}"}</p>
             </div>
           </div>
         </div>
@@ -84,11 +84,10 @@ const Hero = () => {
               >
                 Powered Up
               </a>
-              .
-              <br />
-              And this summer… we BUILD UP.
+              . And this summer… we BUILT UP. Check out the Builders' work
+              below.
             </p>
-            <p>{"{JUNE 27 – SEPT 2}"}</p>
+            <p>{"{JUNE 27 – Sep 2}"}</p>
           </div>
         </div>
       </div>
@@ -111,4 +110,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default ShowcaseLanding;
