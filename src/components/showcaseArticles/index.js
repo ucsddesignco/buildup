@@ -1,6 +1,8 @@
 import React from "react";
 import ShowcaseButtonAsLink from "../showcaseButtonAsLink";
 import "./styles.scss";
+import { useWidth } from "../../hooks/useDimensions";
+import { useState } from "react";
 
 const articles = [
   {
@@ -26,6 +28,10 @@ const articles = [
 ];
 
 const ShowcaseArticles = () => {
+  const [target, setTarget] = useState();
+  const firstBoxWidth = useWidth(target);
+  console.log(firstBoxWidth);
+
   return (
     <section className="showcase__articles">
       <h2>Articles</h2>
@@ -34,16 +40,48 @@ const ShowcaseArticles = () => {
         experience!
       </p>
       <div className="showcase__articles__wrapper">
-        {articles.map((article) => (
+        {articles.map((article, articleIndex) => (
           <div className="showcase__articles__article">
-            <h3>{article.title}</h3>
-            <p>{article.lead}</p> <div className="showcase__flex"></div>
-            <div className="showcase__button__wrapper">
-              {" "}
-              <ShowcaseButtonAsLink buttonText="Read Article" darkBorder />
-            </div>{" "}
-            <div className="showcase_articles__illustration"></div>
-            <div className="showcase_articles__illustration--mobile"></div>
+            <div
+              style={{
+                padding: 30,
+                flexGrow: 1,
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+              }}
+            >
+              <div>
+                {" "}
+                <h3>{article.title}</h3>
+                <p>{article.lead}</p>
+              </div>
+              <div className="showcase__button__wrapper">
+                <ShowcaseButtonAsLink buttonText="Read Article" darkBorder />
+              </div>{" "}
+            </div>
+            <div
+              className="showcase__articles__illustration"
+              style={{
+                width: "calc(100% + 2px)",
+                display: "flex",
+                flexWrap: "wrap",
+                overflow: "hidden",
+                height: firstBoxWidth + 2,
+              }}
+            >
+              {[...Array(8)].map((_, boxIndex) => (
+                <div
+                  className="showcase__articles__illustration__box"
+                  ref={boxIndex === 0 ? setTarget : null}
+                  style={
+                    articleIndex === boxIndex
+                      ? { borderRadius: 999, background: "#9BB7FF" }
+                      : {}
+                  }
+                />
+              ))}
+            </div>
           </div>
         ))}
       </div>
