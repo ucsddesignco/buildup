@@ -1,0 +1,163 @@
+@import "../../../styles/base.scss";
+
+
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #424242;
+}
+
+.page {
+  margin-top: 2.4rem;
+  background-color: #424242;
+}
+
+.title {
+  font-size: clamp(20px, 8vw, 80px);
+  margin-left: 0.2rem;
+  color: #F0F4C3;
+  margin-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  margin-bottom: 0rem;
+  height: 4rem;
+
+  line-height: 4rem;
+
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  margin: 1.6rem;
+}
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  color: #F0F4C3;
+}
+
+.button-cont{
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  margin-top: 1rem;
+  border-radius: 1.8rem;
+  height: clamp(20px, 15vw, 80px);
+  width: clamp(200px, 94vw, 1200px);
+  border-color: #F0F4C3;
+  background-color: #9BB7FF;
+  border-style: solid;
+  color: #424242;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.groupduo {
+  height: 86vw;
+  width: 86vw;
+}
+
+.divider {
+  height: 2px;
+  width: 2px;
+}
+
+.team-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #F0F4C3;
+  font-family: $p-font;
+}
+
+
+.builders-div {
+  margin: 0rem;
+  width: 100vw;
+
+
+}
+.builders-grid {
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  width: 94vw;
+  display: flex;
+
+}
+
+.builder-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  width: 36vw;
+  height: 50vw;
+  margin: 0.2rem;   
+  font-family: $p-font;
+  color: #F0F4C3;
+  
+  img {
+    height: 100%;
+    width: 36vw;
+  }
+  .tags {
+    margin-left: 1rem;
+    .text {
+      text-align: left;
+      text-justify: inter-word;
+    }
+  }
+}
+
+.shapes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  img {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+
+
+  .mentors-div {
+  
+  
+  
+  }
+  .mentors-grid {
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    width: 94vw;
+    display: flex;
+  
+  }
+  
+  .mentor-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+.page3 {
+}
+
+.mentors-header {
+  font-size: 2.4rem;
+  text-align: center;
+}

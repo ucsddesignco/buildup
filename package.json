@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/material": "^5.10.2",
     "@react-hook/resize-observer": "^1.2.5",
     "@react-three/drei": "9.7.1",
     "@react-three/fiber": "8.0.17",
@@ -13,6 +16,7 @@
     "node-sass": "^7.0.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-grid": "^4.0.4",
     "react-scripts": "5.0.1",
     "three": "0.140.2",
     "web-vitals": "^2.1.4"

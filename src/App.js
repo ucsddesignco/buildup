@@ -8,11 +8,13 @@ import WhyApply from "./components/whyapply";
 import About from "./components/about";
 import Overview from "./components/overview";
 import Themes from "./components/themes";
+import GirlsRising from "./components/articles/girls_rising";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
+      {/*
       <Landing />
       <About />
       <Overview />
@@ -20,6 +22,8 @@ function App() {
       <WhyApply />
       <FAQ />
       <Footer />
+      */}
+      <GirlsRising />
     </div>
   );
 }
