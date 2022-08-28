@@ -18,7 +18,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1300px) {
     grid-template-columns: repeat(2, 1fr);
   }
   @media only screen and (max-width: 800px) {
@@ -45,11 +45,13 @@
   h3 {
     font-size: 24px;
     margin-bottom: 20px;
+    font-family: $p-font;
   }
   p {
     font-size: 20px;
     margin: initial;
     margin-bottom: 60px;
+    text-align: justify;
   }
 
   a p {
