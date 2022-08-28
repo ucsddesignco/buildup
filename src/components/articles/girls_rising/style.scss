@@ -4,18 +4,18 @@
 html {
   height: 100%;
   width: 100%;
-  background-color: #424242;
+  background-color: $primary-color;
 }
 
 .page {
-  margin-top: 2.4rem;
-  background-color: #424242;
+  margin-top: 2.8rem;
+  background-color: $primary-color;
 }
 
 .title {
   font-size: clamp(20px, 8vw, 80px);
-  margin-left: 0.2rem;
   color: #F0F4C3;
+  margin-left: 0.1rem;
   margin-top: 0.2rem;
   padding-bottom: 0.2rem;
   margin-bottom: 0rem;
@@ -29,6 +29,9 @@ html {
   display: flex;
   flex-direction: column;
   margin: 1.6rem;
+  p {
+    font-size: 1rem;
+  }
 }
 p {
   text-align: justify;
@@ -45,7 +48,7 @@ p {
   margin-top: 1rem;
   border-radius: 1.8rem;
   height: clamp(20px, 15vw, 80px);
-  width: clamp(200px, 94vw, 1200px);
+  width: clamp(100px, 86vw, 1200px);
   border-color: #F0F4C3;
   background-color: #9BB7FF;
   border-style: solid;
@@ -54,110 +57,243 @@ p {
 
 .group {
   display: flex;
-  align-items: center;
   justify-content: center;
+
 }
-.groupduo {
-  height: 86vw;
+.photo {
+  background: url('../../../assets/images/Showcase/Girls Rising/group_duo.png');
+  background-size:contain;
   width: 86vw;
+  height: 73vw;
+  
 }
 
-.divider {
-  height: 2px;
-  width: 2px;
+.photo:hover {
+  background: url('../../../assets/images/Showcase/Girls Rising/group_original.png');
+  background-size:contain;
+  width: 19rem;
+  height: 16.2rem;
+  
+}
+.mobile-divider {
+  margin-top: 2rem;
+  height: 10vw;
+  width: 100vw;
+
+  img {
+    width: 100vw;
+    height: 20w;
+  }
+}
+
+.web-divider {
+  display: none;
 }
 
 .team-title {
+  margin-top: 1rem;
   text-align: center;
   margin-bottom: 1rem;
   color: #F0F4C3;
   font-family: $p-font;
+  font-size: 6vw;
 }
 
-
-.builders-div {
-  margin: 0rem;
-  width: 100vw;
-
-
-}
-.builders-grid {
-  align-items: center;
-  justify-content: center;
-  margin: 2rem;
-  width: 94vw;
-  display: flex;
-
-}
-
-.builder-img {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.grid-item {
-  display: flex;
-  flex-direction: column;
-  flex-flow: column wrap;
-  width: 36vw;
-  height: 50vw;
-  margin: 0.2rem;   
-  font-family: $p-font;
-  color: #F0F4C3;
-  
-  img {
-    height: 100%;
-    width: 36vw;
-  }
-  .tags {
-    margin-left: 1rem;
-    .text {
-      text-align: left;
-      text-justify: inter-word;
-    }
-  }
-}
-
-.shapes {
+.mobile-shapes {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   img {
     width: 80%;
     height: 80%;
   }
 }
 
+.web-shapes {
+  display: none;
+}
 
+.mentors-div {
+  width: 100vw;
+}
+.mentor-grid-item {
+  width: 50vw;
 
-  .mentors-div {
-  
-  
-  
-  }
-  .mentors-grid {
-    align-items: center;
-    justify-content: center;
-    margin: 2rem;
-    width: 94vw;
-    display: flex;
-  
-  }
-  
   .mentor-img {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-
-
-.page3 {
+  img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+  }
+  .tags {
+    margin-left: 5vw;
+    text-align: start;
+    text-justify: inter-word;
+    width: 20vw;
+    height: 9vw;
+  }
 }
 
 .mentors-header {
   font-size: 2.4rem;
   text-align: center;
+  margin-bottom: 2rem;
+  color: #F0F4C3;
+}
+
+@media only screen and (min-width: 900px) {
+
+  .page1 {
+    margin-top: 12rem;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex: row;
+    .left {
+      width: 56vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 6rem;
+      h1 {
+        width: 26rem;
+        height: 10rem;
+      }
+      p {
+        margin-top: 2rem;
+        margin-right: 1.8rem;
+      }
+      .button-cont {
+        width: 18.8rem;
+
+        .button {
+          border-radius: 4rem;
+          height: 5rem;
+          font-size: 1.4rem;
+        }
+      }
+    }
+    
+    .group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 4vw;
+      padding-right: 3vw;
+    
+    }
+    .photo {
+      background: url('../../../assets/images/Showcase/Girls Rising/group_duo.png');
+      background-size:contain;
+      width: 40vw;
+      height: 36vw;
+    }
+    
+    .photo:hover {
+      background: url('../../../assets/images/Showcase/Girls Rising/group_original.png');
+      background-size:contain;
+      width: 40vw;
+      height: 36vw;
+    }
+
+    
+  }
+
+  .web-divider {
+    display: flex;
+    margin-top: 4rem;
+    height: 7.4vw;
+    width: 100vw;
+  
+    img {
+      width: 100vw;
+      height: 10w;
+    }
+  }
+
+  .mobile-divider {
+    display: none;
+  }
+
+
+
+  .page2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mentors-div {
+    width: 66vw;
+  }
+
+  .mentor-grid-item {
+    width: 50vw;
+  
+    .mentor-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+    }
+    .tags {
+      margin-top: 0.4vw;
+      margin-left: 1.2vw;
+      text-align: start;
+      text-justify: inter-word;
+      width: 18vw;
+      height: 7vw;
+
+      p {
+        font-size: 1.4vw;
+      }
+    }
+  }
+
+  .mobile-shapes {
+    display: none;
+    
+  }
+  .web-shapes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    img {
+      width: 80%;
+      height: 80%;
+    }
+  }
+
+  .mentors-header {
+    margin-bottom: 3.6rem;
+    font-size: 2.4vw;
+  }
+  .team-title {
+    font-size: 2.4vw;
+  }
+
+
+
 }
