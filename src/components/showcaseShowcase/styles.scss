@@ -12,10 +12,28 @@
   overflow-x: hidden;
 }
 
+.showcase__illustration__box {
+  box-sizing: border-box;
+
+  aspect-ratio: 1 / 1;
+  position: relative;
+  border: 2px solid $secondary-color;
+  margin: -1px;
+}
+.showcase__illustration__box__wrapper {
+  display: flex;
+  height: 100%;
+  width: 0;
+  position: relative;
+}
+
 .showcase__header {
   display: flex;
   color: $secondary-color;
   gap: 30px;
+  @media only screen and (max-width: $mobile) {
+    gap: 10px;
+  }
   h2 {
     display: inline-block;
     text-align: center;
@@ -36,28 +54,25 @@
 }
 
 .showcase__header__illustration {
-  flex-grow: 0.5;
-  background: purple;
+  flex-grow: 1;
   position: relative;
-  &::before {
-    content: "";
-    background: seagreen;
-    position: absolute;
-    width: 300%;
-    height: 100%;
-  }
 }
 
-.showcase__header__illustration--left {
-  &::before {
-    right: 0;
-  }
+.showcase__header__illustration__inner {
+  width: 0;
+  position: absolute;
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
 }
 
-.showcase__header__illustration--right {
-  &::before {
-    left: 0;
-  }
+.showcase__header__illustration--left > * {
+  right: 0;
+  transform: scaleX(-1);
+}
+
+.showcase__header__illustration--right > * {
+  left: 0;
 }
 
 .showcase__teams {
@@ -134,6 +149,8 @@
   }
   text-align: center;
   gap: 30px;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .showcase__actions__action {
@@ -146,23 +163,30 @@
     font-size: 32px;
     padding-bottom: 60px;
     font-family: $p-font;
+    @media only screen and (max-width: $mobile) {
+      font-size: 20px;
+      padding-bottom: 30px;
+    }
   }
 }
 
 .showcase__actions__illustration--vertical {
   width: 256px;
-  background: gray;
+  height: inherit;
+  display: flex;
+  justify-content: center;
   @media only screen and (max-width: $mobile) {
     display: none;
   }
 }
 
 .showcase__actions__illustration--horizontal {
+  margin-top: 60px;
   display: none;
   width: 100%;
   height: 50px;
-  background: magenta;
   @media only screen and (max-width: $mobile) {
-    display: block;
+    display: flex;
+    justify-content: center;
   }
 }

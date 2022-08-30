@@ -34,7 +34,7 @@ const ShowcaseNavbar = ({ currentPage }) => {
       </Link>
       <ul>
         {pages.map((page) => (
-          <li>
+          <li style={{ fontWeight: "500" }}>
             <Link to={page.url}>
               {page.url === currentPage ? `{${page.name}}` : page.name}
             </Link>
@@ -55,7 +55,7 @@ const ShowcaseNavbar = ({ currentPage }) => {
           {pages.map((page) => (
             <Link to={page.url}>
               <div className="section">
-                <p>{page.name}</p>
+                <p style={{ fontWeight: 500 }}>{page.name}</p>
               </div>
             </Link>
           ))}
