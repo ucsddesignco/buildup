@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./styles.scss";
 import ShowcaseButtonAsLink from "../showcaseButtonAsLink";
-import Modal from "../modal";
 import NewModal from "../newModal";
 import { Teams } from '../../teams';
 
