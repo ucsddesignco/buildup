@@ -37,8 +37,12 @@ const NewModal = (props) => {
                         <h3>{current_team.team_name}</h3>
                         <img className={current_team.header_styling} src={require(`../../assets/images/Showcase/assets/Titles/${current_team.team_files}.svg`)} />
                         <p>{current_team.description}</p>
-                        <div className="button">
-                            <p>VIEW CASE STUDY</p>
+                        <div className="button-container">
+                            <a href={current_team.case_study_link} target='_blank' >
+                                <div className="button">
+                                    <p>VIEW CASE STUDY</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <Carousel 

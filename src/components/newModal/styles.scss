@@ -72,22 +72,26 @@
                 }
             }
         }
+        .button-container {
 
-        .button {
-            display: flex;
-            margin: 2rem 0 4rem;
-            border-radius: 1.8rem;
-            border-color: #F0F4C3;
-            background-color: #9BB7FF;
-            border-style: solid;
-            height: 60px;
+            a {
+                text-decoration: none;
 
-            p {
-                color: $primary-color;
-                font-family: $p-font;
-                margin: auto;
+                .button {
+                    display: flex;
+                    margin: 2rem 0 4rem;
+                    border-radius: 1.8rem;
+                    background-color: #9BB7FF;
+                    border: 2px solid $secondary-color;
+                    height: 60px;
+
+                    p {
+                        color: $primary-color;
+                        font-family: $p-font;
+                        margin: auto;
+                    }
+                }
             }
-
         }
     }
     .divider {
@@ -188,8 +192,23 @@
             .carousel {
                 width: 34vw;
             }
-            .button {
-                width: 20vw;
+            .button-container {
+                width: calc(20vw + 4px);
+                overflow: hidden;
+
+                a {
+                    text-decoration: none;
+
+                    .button {
+                        width: 20vw;
+
+                        p {
+                            color: $primary-color;
+                            font-family: $p-font;
+                            margin: auto;
+                        }
+                    }
+                }
             }
         }
         .page2 {
