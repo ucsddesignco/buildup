@@ -28,7 +28,7 @@ const NewModal = (props) => {
   return (
     <div>
         {props.show && (
-            <div className="page">
+            <div className="modal">
                 <div className="top-container">
                     <img className="exit" src={Exit} onClick={props.onHide} />
                 </div>

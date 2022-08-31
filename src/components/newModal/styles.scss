@@ -1,6 +1,6 @@
 @import "../../styles/base.scss";
 
-.page {
+.modal {
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -8,7 +8,6 @@
     left: 0;
     height: calc(100vh - 7.2rem);
     background-color: $primary-color;
-    background-image: url('');
     color: #F0F4C3;
     z-index: 100000;
     width: 100vw;
