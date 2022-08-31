@@ -1,9 +1,12 @@
 @import "../../styles/base.scss";
 
 .showcase__buttonAsLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: $accent-color-1;
   height: 54px;
-  padding: 0 32px;
+  width: 100%;
   box-sizing: border-box;
   display: inline-flex;
   align-items: center;
@@ -18,4 +21,18 @@
     font-size: 20px;
     text-transform: uppercase;
   }
+
+  @media only screen and (min-width: $mobile) {
+    width: auto;
+    padding: 0 32px;
+  }
+}
+
+.showcase__buttonAsLink:hover,  .showcase__buttonAsLink:active {
+    border: 2px solid #F0F4C3;
+    background: $primary-color;
+
+    p {
+      color: #F0F4C3;
+    }
 }

@@ -1,8 +1,28 @@
 <svg width="516" height="345" viewBox="0 0 516 345" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1" y="-1" width="85.5528" height="85.5528" transform="matrix(-1 0 0 1 515.762 87.6445)" stroke="#F0F4C3" stroke-width="2"/>
+<rect x="1" y="-1" width="171.194" height="85.5528" rx="41" transform="matrix(-1 0 0 1 430.121 87.6445)" stroke="#F0F4C3" stroke-width="2"/>
+<rect x="1" y="-1" width="85.5528" height="85.5528" transform="matrix(-1 0 0 1 430.121 173.285)" stroke="#F0F4C3" stroke-width="2"/>
+<rect x="1" y="-1" width="85.5528" height="85.5528" transform="matrix(-1 0 0 1 515.762 173.285)" stroke="#F0F4C3" stroke-width="2"/>
+<rect x="1" y="-1" width="85.5528" height="85.5528" transform="matrix(-1 0 0 1 430.121 258.93)" stroke="#F0F4C3" stroke-width="2"/>
+<rect x="1" y="-1" width="85.5528" height="85.5528" transform="matrix(-1 0 0 1 344.479 173.285)" stroke="#F0F4C3" stroke-width="2"/>
+<rect x="1" y="-1" width="85.5528" height="85.5528" transform="matrix(-1 0 0 1 258.836 173.285)" stroke="#F0F4C3" stroke-width="2"/>
+<rect x="1" y="-1" width="85.5528" height="85.5528" transform="matrix(-1 0 0 1 173.195 173.285)" stroke="#F0F4C3" stroke-width="2"/>
+<rect x="1" y="-1" width="85.5528" height="85.5528" transform="matrix(-1 0 0 1 515.762 258.93)" stroke="#F0F4C3" stroke-width="2"/>
+<rect x="1" y="-1" width="85.5528" height="85.5528" transform="matrix(-1 0 0 1 344.479 258.93)" stroke="#F0F4C3" stroke-width="2"/>
+<rect x="1" y="-1" width="85.5528" height="85.5528" transform="matrix(-1 0 0 1 515.76 87.6406)" stroke="#F0F4C3" stroke-width="2"/>
+<rect x="1" y="-1" width="171.194" height="85.5528" rx="41" transform="matrix(-1 0 0 1 430.119 87.6406)" fill="#43A047" stroke="#F0F4C3" stroke-width="2"/>
+<rect x="1" y="-1" width="85.5528" height="85.5528" transform="matrix(-1 0 0 1 430.119 173.285)" stroke="#F0F4C3" stroke-width="2"/>
+<rect x="1" y="-1" width="85.5528" height="85.5528" transform="matrix(-1 0 0 1 515.76 173.285)" stroke="#F0F4C3" stroke-width="2"/>
+<rect x="1" y="-1" width="85.5528" height="85.5528" transform="matrix(-1 0 0 1 430.119 258.926)" stroke="#F0F4C3" stroke-width="2"/>
+<rect x="1" y="-1" width="85.5528" height="85.5528" transform="matrix(-1 0 0 1 344.477 173.285)" stroke="#F0F4C3" stroke-width="2"/>
+<rect x="1" y="-1" width="85.5528" height="85.5528" transform="matrix(-1 0 0 1 258.836 173.285)" stroke="#F0F4C3" stroke-width="2"/>
+<rect x="1" y="-1" width="85.5528" height="85.5528" transform="matrix(-1 0 0 1 173.193 173.285)" stroke="#F0F4C3" stroke-width="2"/>
+<rect x="1" y="-1" width="85.5528" height="85.5528" transform="matrix(-1 0 0 1 515.76 258.926)" stroke="#F0F4C3" stroke-width="2"/>
+<rect x="1" y="-1" width="85.5528" height="85.5528" transform="matrix(-1 0 0 1 344.477 258.926)" stroke="#F0F4C3" stroke-width="2"/>
 <rect x="1" y="-1" width="85.5528" height="85.5528" transform="matrix(-1 0 0 1 515.76 2)" stroke="#F0F4C3" stroke-width="2"/>
 <rect x="1" y="-1" width="85.5528" height="85.5528" transform="matrix(-1 0 0 1 430.119 2)" stroke="#F0F4C3" stroke-width="2"/>
 <rect x="1" y="-1" width="85.5528" height="85.5528" transform="matrix(-1 0 0 1 258.836 258.926)" stroke="#F0F4C3" stroke-width="2"/>
-<path d="M131.717 258.445C154.36 258.445 172.717 276.802 172.717 299.445V302.998C172.717 325.642 154.36 343.998 131.717 343.998H42.5223C19.8786 343.998 1.52231 325.642 1.52231 302.998V299.445C1.52231 276.802 19.8787 258.445 42.5223 258.445H131.717Z" fill="#43A047" stroke="#F0F4C3" stroke-width="2"/>
+<path d="M42.5223 258.445H131.717C154.36 258.445 172.717 276.802 172.717 299.445V302.998C172.717 325.642 154.36 343.998 131.717 343.998H42.5223C19.8786 343.998 1.52231 325.642 1.52231 302.998V299.445C1.52231 276.802 19.8787 258.445 42.5223 258.445Z" fill="#43A047" stroke="#F0F4C3" stroke-width="2"/>
 <rect x="1" y="-1" width="85.5528" height="85.5528" transform="matrix(-1 0 0 1 515.76 87.6406)" stroke="#F0F4C3" stroke-width="2"/>
 <rect x="1" y="-1" width="85.5528" height="85.5528" transform="matrix(-1 0 0 1 430.119 173.285)" stroke="#F0F4C3" stroke-width="2"/>
 <rect x="1" y="-1" width="85.5528" height="85.5528" transform="matrix(-1 0 0 1 258.836 87.6406)" stroke="#F0F4C3" stroke-width="2"/>

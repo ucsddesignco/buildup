@@ -32,6 +32,7 @@
         text-transform: uppercase;
 
         a {
+            font-family: $link-font;
             text-decoration: underline;
             color: #000;
         }
@@ -52,13 +53,13 @@
     }
 
     @media only screen and (max-width: $mobile) {
-        padding: 2rem $mobile-padding;
+        padding: 2rem 6vw;
         border-top: $mobile-stroke;
 
         .footer-left {
             p {
-                margin-right: 0.5rem;
-                font-size: 0.5rem;
+                margin-right: 0.2rem;
+                font-size: 12px;
             }
             .footer-logo {
                 display: flex;
@@ -80,7 +81,7 @@
             a {
                 text-decoration: underline;
                 color: #424242;
-                font-size: 0.5rem;
+                font-size: 10px;
             }
         }
     }
