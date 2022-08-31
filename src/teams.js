@@ -127,7 +127,7 @@ export const Teams = [
         description: 'North County LGBTQ Resource Center is a nonprofit that serves, empowers, and advocates for North County San Diego’s diverse LGBTQIA+ community. The team developed a mobile friendly website and social media marketing strategy to increase community engagement, elevate support for the community, and build awareness for LGBTQ safety.',
         team_shape: 'lgbt',
         case_study_link: 'https://www.notion.so/627c99919ce049ddbf76f5a3e6e0048a',
-        team_files: '',
+        team_files: 'North_County_LGBTQ_Resource_Center',
         team_image: 'example',
         number: 2,
         mentors_num: 3,
