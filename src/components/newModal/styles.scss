@@ -1,0 +1,234 @@
+@import "../../styles/base.scss";
+
+.page {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 7.2rem;
+    left: 0;
+    height: calc(100vh - 7.2rem);
+    background-color: $primary-color;
+    background-image: url('');
+    color: #F0F4C3;
+    z-index: 100000;
+    width: 100vw;
+
+    .top-container {
+        display: flex;
+        justify-content: flex-end;
+        margin: 2rem 8vw 0;
+
+        .exit {
+            width: 3vw;
+            min-width: 2rem;
+            object-fit: contain;
+            cursor: pointer;
+        }
+    }
+    .page1 {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 8vw 2rem;
+
+        .left {
+
+            h3 {
+                font-size: clamp(2rem, 4vw, 5rem);
+                font-family: $heading-font;
+                text-transform: uppercase;
+                margin-bottom: 1rem;
+            }
+            .web-title, .web-title-girlsrising {
+                display: none;
+            }
+            img {
+                width: 30vw;
+                object-fit: contain;
+            }
+            p {
+                font-size: 1rem;
+                color: #F0F4C3;
+            }
+        }
+        .carousel {
+            img {
+                pointer-events: auto !important;
+                cursor: pointer;
+                object-fit: contain;
+            }
+            .carousel-slider {
+                overflow: inherit;
+            }
+            .control-dots  {
+                transform: translateY(3rem);
+            }
+            .control-dots {
+                .dot {
+                    background: $secondary-color !important;
+                    opacity: 1 !important;
+                }
+                .dot.selected {
+                    background: #43A047!important;
+                }
+            }
+        }
+
+        .button {
+            display: flex;
+            margin: 2rem 0 4rem;
+            border-radius: 1.8rem;
+            border-color: #F0F4C3;
+            background-color: #9BB7FF;
+            border-style: solid;
+            height: 60px;
+
+            p {
+                color: $primary-color;
+                font-family: $p-font;
+                margin: auto;
+            }
+
+        }
+    }
+    .divider {
+        margin: 2rem 0 1rem;
+    }
+    .page2 {
+        display: flex;
+        flex-direction: column;
+        margin: 0 8vw;
+
+        .team-title {
+            margin: 1rem 0;
+            text-align: center;
+            color: #F0F4C3;
+            font-family: $p-font;
+            font-size: 6vw;
+        }
+        .mentors-div, .mentors-div2, .mentors-div3 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+
+                .mentor-grid-item {
+
+                    img {
+                        width: 100%;
+                    }
+                    p {
+                        color: $secondary-color;
+                    }
+                }
+                
+        }
+    }
+    .graphic {
+        margin: 2rem 16vw 1rem;
+    }
+    .page3 {
+        display: flex;
+        flex-direction: column;
+        margin: 0 8vw 4rem;
+
+        .team-title {
+            margin: 1rem 0;
+            text-align: center;
+            color: #F0F4C3;
+            font-family: $p-font;
+            font-size: 6vw;
+        }
+        .mentors-div, .mentors-div2, .mentors-div3 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            justify-content: center;
+
+                .mentor-grid-item {
+
+                    img {
+                        width: 100%;
+                    }
+                    p {
+                        color: $secondary-color;
+                    }
+                }
+                
+        }
+    }
+    @media only screen and (min-width: $desktop) {
+        .top-container {
+            margin: 2rem 4vw 1rem;
+        }
+        .page1 {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0rem 4vw 4rem 8vw;
+            
+            .left {
+                width: 36vw;
+                transform: translateY(3vh);
+
+                h3 {
+                    display: none;
+                }
+                .web-title {
+                    display: flex;
+                    object-fit: contain;
+                    margin-bottom: 2rem;
+                    width: 30vw;
+                }
+                .web-title-girlsrising {
+                    display: flex;
+                    object-fit: contain;
+                    margin-bottom: 2rem;
+                    width: 16vw;
+                }
+            }
+            .carousel {
+                width: 34vw;
+            }
+            .button {
+                width: 20vw;
+            }
+        }
+        .page2 {
+            margin: 0 16vw;
+
+            .team-title {
+                font-size: 3vw;
+                margin: 4rem 0;
+            }
+            .mentors-div {
+                grid-template-columns: repeat(3, 1fr);
+                
+            }
+        }
+        .page3 {
+            margin: 0 16vw 6rem;
+
+            .team-title {
+                font-size: 3vw;
+                margin: 4rem 0;
+            }
+            .mentors-div2 {
+                grid-template-columns: repeat(2, 1fr);
+                margin: 0 12vw;
+            }
+            .mentors-div3 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  color: #F0F4C3;
+}
+
+    
+
+    
+

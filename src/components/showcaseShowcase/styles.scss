@@ -2,17 +2,46 @@
 
 .showcase {
   background: $primary-color;
-  padding: 120px;
+  padding: 6rem 0;
   @media only screen and (max-width: 1024px) {
-    padding: 60px;
+    padding: 4rem 0;
   }
   @media only screen and (max-width: $mobile) {
-    padding: 30px;
+    padding: 2rem 0;
   }
   overflow-x: hidden;
 }
 
-.showcase__header {
+.showcase__bottom {
+  padding: 0 8vw;
+}
+
+.showcase-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 -2vw;
+
+  h2 {
+    text-align: center;
+    color: $secondary-color;
+    transform: translateY(-1rem);
+
+    @media only screen and (max-width: $mobile) {
+      transform: translateY(-0.5rem);
+    }
+  }
+  .left-image {
+    width: 20vw;
+    object-fit: contain;
+  }
+  .right-image {
+    width: 20vw;
+    object-fit: contain;
+  }
+}
+
+/* .showcase__header {
   display: flex;
   color: $secondary-color;
   gap: 30px;
@@ -37,11 +66,10 @@
 
 .showcase__header__illustration {
   flex-grow: 0.5;
-  background: purple;
   position: relative;
+  margin-left: -1vw;
   &::before {
     content: "";
-    background: seagreen;
     position: absolute;
     width: 300%;
     height: 100%;
@@ -59,7 +87,7 @@
     left: 0;
   }
 }
-
+ */
 .showcase__teams {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -103,6 +131,7 @@
   width: 100%;
   position: relative;
   display: block;
+  cursor: pointer;
   &::before {
     content: "";
     display: block;
@@ -111,27 +140,44 @@
   }
   &::after {
     content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: green;
-    width: 50px;
-    height: 50px;
 
     @media only screen and (max-width: $mobile) {
       width: 25px;
       height: 25px;
     }
   }
+  .showcase__team__cover {
+    width: 100%;
+    height: 100%;
+  }
+  img {
+    
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .showcase__actions {
   display: flex;
+  align-items: flex-end;
   @media only screen and (max-width: $mobile) {
     flex-direction: column;
   }
   text-align: center;
+
+  img {
+    width: 5vw;
+    object-fit: contain;
+    margin: 0 8vw;
+
+    @media only screen and (max-width: $mobile) {
+      display: none;
+    }
+  }
 }
 
 .showcase__actions__action {
@@ -143,14 +189,6 @@
   h3 {
     font-size: 32px;
     padding-bottom: 60px;
-  }
-}
-
-.showcase__actions__illustration--vertical {
-  width: 256px;
-  background: gray;
-  @media only screen and (max-width: $mobile) {
-    display: none;
   }
 }
 

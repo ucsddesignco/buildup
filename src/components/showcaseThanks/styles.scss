@@ -1,0 +1,47 @@
+@import "../../styles/base.scss";
+
+.thanks {
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: 6rem 8vw 6rem 0;
+
+    .top-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+
+        .text-container {
+            h2 {
+                color: $secondary-color;
+                transform: translateX(-1vw);
+            }
+        }
+        img {
+            width: 35vw;
+            object-fit: contain;
+        }
+    }
+    .bottom-container {
+        display: flex;
+        flex-direction: column;
+
+        .response-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 1rem 0 1rem 8vw;
+
+            img {
+                width: 5vw;
+                object-fit: contain;
+            }
+            p {
+                color: $secondary-color;
+                margin-left: 1rem;
+            }
+        }
+    }
+}
