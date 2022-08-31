@@ -9,9 +9,17 @@
     h2 {
       display: flex;
       align-self: center;
+
+      @media only screen and (max-width: $mobile) {
+        font-size: 14vw;
+      }
     }
     p {
       margin: 60px 0;
+
+      @media only screen and (max-width: $mobile) {
+        font-size: 1.15rem;
+      }
     }
     .showcase__articles__wrapper {
       display: grid;

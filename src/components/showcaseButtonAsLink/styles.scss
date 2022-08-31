@@ -11,9 +11,11 @@
   color: $primary-color;
   border-radius: 999px;
   border: 2px solid $secondary-color;
+  margin-bottom: 2rem;
 
   p {
     display: inline-block;
     font-size: 20px;
+    text-transform: uppercase;
   }
 }

@@ -7,6 +7,7 @@ import { Teams } from '../../teams';
 import ShowcaseGraphic1 from '../../assets/images/Showcase/assets/showcaseGraphic1.svg';
 import ShowcaseGraphic2 from '../../assets/images/Showcase/assets/showcaseGraphic2.svg';
 import ShowcaseGraphic3 from '../../assets/images/Showcase/assets/showcaseGraphic3.svg';
+import MobileDivider from '../../assets/images/Showcase/Team_Shapes/mobileDivider.svg';
 
 const ShowcaseShowcase = () => {
 
@@ -46,6 +47,11 @@ const ShowcaseShowcase = () => {
             </div>
           ))}
         </div>
+        
+        <div className="divider-container">
+          <img src={MobileDivider} className="mobile-divider" />
+        </div>
+
         <div className="showcase__actions">
 
           <div className="showcase__actions__action">
