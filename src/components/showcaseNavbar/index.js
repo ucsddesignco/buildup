@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-// import "./style.scss";
+import "./style.scss";
 import "../../styles/base.scss";
 
 import BuildLogo from "../../assets/images/buildlogo.svg";
@@ -30,7 +30,7 @@ const ShowcaseNavbar = ({ currentPage }) => {
   return (
     <div className="navbar">
       <Link to="./">
-        <img src={BuildLogo} alt="" />
+        <img src={BuildLogo} alt=""/>
       </Link>
       <ul>
         {pages.map((page) => (
@@ -47,7 +47,7 @@ const ShowcaseNavbar = ({ currentPage }) => {
         <div className="mobile-container">
           <div className="top">
             <Link to="./">
-              <img src={BuildLogo} alt="" />
+              <img src={BuildLogo} alt="" className="build-up"/>
             </Link>
             <img src={Cube} className="menu" onClick={closeMenu} />
           </div>
