@@ -8,8 +8,8 @@ import Heart from "../../assets/images/heart.svg";
 import Logo from "../../assets/images/logo.svg";
 import { Link } from "react-router-dom";
 const pages = [
-  { name: "Showcase", url: "/" },
-  { name: "About Build Up", url: "/about" },
+  { name: "SHOWCASE", url: "/" },
+  { name: "ABOUT BUILD UP", url: "/about" },
 ];
 
 const ShowcaseNavbar = ({ currentPage }) => {
