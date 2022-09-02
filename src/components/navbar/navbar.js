@@ -1,7 +1,6 @@
 import { React, useState } from "react";
 import "./style.scss";
 import "../../styles/base.scss";
-import gsap from "gsap";
 
 import BuildLogo from "../../assets/images/buildlogo.svg";
 import Menu from "../../assets/images/navmenu.svg";

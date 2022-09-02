@@ -38,7 +38,7 @@ $mobile-stroke: 1px #424242 solid;
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   scroll-padding-top: 4rem;
 
   @media only screen and (min-width: $mobile) {

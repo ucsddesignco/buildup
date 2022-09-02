@@ -30,7 +30,7 @@
 
     .secondLine {
       display: flex;
-      align-items: end;
+      align-items: flex-start;
       gap: 3vw;
 
       h1 {
@@ -49,6 +49,8 @@
       display: flex;
       flex-direction: column;
       gap: 1vw;
+      max-width: 40vw;
+      margin-top: 0.5em;
 
       a {
         color: inherit;

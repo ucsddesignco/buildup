@@ -46,9 +46,7 @@ const ShowcaseLanding = () => {
                 >
                   Powered Up
                 </a>
-                .
-                <br />
-                And this summer… we BUILT UP. Check out the Builders' work
+                . And this summer… we BUILT UP. Check out the Builders' work
                 below.
               </p>
               <p>{"{JUNE 27 – SEP 2}"}</p>
