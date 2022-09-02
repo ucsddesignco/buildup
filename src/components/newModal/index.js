@@ -54,15 +54,23 @@ const NewModal = (props) => {
                         emulateTouch={true}
                         className='carousel'
                     >
-                        <div key={0}>
-                            <img src={GroupDuo}
-                                onClick={() => next(0)}
-                            />
-                        </div>
-                        <div key={1}>
-                            <img src={GroupOriginal}
+                        
+                        <div key={0} className="carousel1">
+                            <img src={require(`../../assets/images/Showcase/${current_team.team_files}/showcase.png`)} className="grouporiginal"
                                 onClick={() => next(1)}
                             />
+                            <img src={require(`../../assets/images/Showcase/${current_team.team_files}/showcase_bw.png`)} className="groupduo"
+                                onClick={() => next(1)}
+                            />
+                        </div>
+                        <div key={1} className="carousel1">
+                            <img src={require(`../../assets/images/Showcase/${current_team.team_files}/group_original.png`)} className="grouporiginal"
+                                onClick={() => next(0)}
+                            />
+                           <img src={require(`../../assets/images/Showcase/${current_team.team_files}/group_duo.png`)} className="groupduo"
+                                onClick={() => next(0)}
+                            />
+                            
                         </div>
                     </Carousel>
                 </div>
@@ -80,7 +88,9 @@ const NewModal = (props) => {
                         ))}
                     </div>
                 </div>
-                <img className="graphic" src={require(`../../assets/images/Showcase/Team_Shapes/${current_team.team_shape}Graphic.svg`)} />
+                <div className="graphic-cont">
+                    <img className="graphic" src={require(`../../assets/images/Showcase/Team_Shapes/${current_team.team_shape}Graphic.svg`)} />
+                </div>
                 <div className="page3">
                         <h3 className="team-title">THE MENTORS</h3>
                         <div className={`mentors-div${current_team.mentors.length}`}>

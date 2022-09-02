@@ -23,31 +23,43 @@
             min-width: 2rem;
             object-fit: contain;
             cursor: pointer;
+            padding: 1rem 0 1.8rem 0;
         }
     }
     .page1 {
         display: flex;
         flex-direction: column;
         padding: 2rem 8vw 2rem;
-
         .left {
-
+            margin-top: 0rem;
+            padding-top: 0rem;
             h3 {
                 font-size: clamp(2rem, 4vw, 5rem);
                 font-family: $heading-font;
-                text-transform: uppercase;
-                margin-bottom: 1rem;
+                text-transform: uppercase;  
+            }
+            .web-title {   
+                margin-top: 0rem;
+                margin-bottom: 4rem;
+                padding-top: 0;
+                padding-bottom: 0;
             }
             .web-title, .web-title-girlsrising {
+                display: none;
+            }
+            .web-title, .web-title-lgbtq {
                 display: none;
             }
             img {
                 width: 30vw;
                 object-fit: contain;
             }
+           
             p {
+                margin-top: 3rem;
                 font-size: 1rem;
                 color: #F0F4C3;
+                margin-bottom: 2rem;
             }
         }
         .carousel {
@@ -72,6 +84,15 @@
                 }
             }
         }
+        .carousel1 .grouporiginal {
+            display: none;
+            z-index: 99;
+            position: absolute;
+        }
+        .carousel1:hover .grouporiginal {
+            display: inline;
+        }
+
         .button-container {
 
             a {
@@ -79,7 +100,7 @@
 
                 .button {
                     display: flex;
-                    margin: 2rem 0 4rem;
+                    margin: 2.6rem 0 3rem;
                     border-radius: 1.8rem;
                     background-color: #9BB7FF;
                     border: 2px solid $secondary-color;
@@ -88,6 +109,7 @@
                     p {
                         color: $primary-color;
                         font-family: $p-font;
+                        font-weight: 400;
                         margin: auto;
                     }
                 }
@@ -115,19 +137,28 @@
             gap: 2rem;
 
                 .mentor-grid-item {
-
                     img {
                         width: 100%;
                     }
                     p {
                         color: $secondary-color;
+                        font-weight: bold;
+                    }
+                    .member_name {
+                        padding-top: 0.6rem;
                     }
                 }
                 
         }
     }
+    .graphic-cont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3.1rem 0 2rem 0;
+    }
     .graphic {
-        margin: 2rem 16vw 1rem;
+        width: 84vw;
     }
     .page3 {
         display: flex;
@@ -154,6 +185,10 @@
                     }
                     p {
                         color: $secondary-color;
+                        font-weight: bold;
+                    }
+                    .mentor_name {
+                        padding-top: 0.6rem;
                     }
                 }
                 
@@ -162,17 +197,24 @@
     @media only screen and (min-width: $desktop) {
         .top-container {
             margin: 2rem 4vw 1rem;
+
+            .exit {
+                width: 3vw;
+                min-width: 2rem;
+                object-fit: contain;
+                cursor: pointer;
+                padding: 1.6rem 0 2.6rem 0;
+            }
         }
         .page1 {
             flex-direction: row;
             justify-content: space-between;
-            align-items: center;
+            align-items: start;
             padding: 0rem 4vw 4rem 8vw;
+            margin-top: 0;
             
             .left {
                 width: 36vw;
-                transform: translateY(3vh);
-
                 h3 {
                     display: none;
                 }
@@ -181,31 +223,43 @@
                     object-fit: contain;
                     margin-bottom: 2rem;
                     width: 30vw;
+                    padding-top: 6rem;
                 }
                 .web-title-girlsrising {
                     display: flex;
                     object-fit: contain;
                     margin-bottom: 2rem;
                     width: 16vw;
+                    padding-top: 6rem;
+                }
+                .web-title-lgbtq {
+                    display: flex;
+                    object-fit: contain;
+                    margin-bottom: 2rem;
+                    width: 30vw;
+                    padding-top: 3.8rem;
                 }
             }
             .carousel {
                 width: 34vw;
             }
+
             .button-container {
-                width: calc(20vw + 4px);
+                width: calc(14vw + 4px);
                 overflow: hidden;
 
                 a {
                     text-decoration: none;
 
                     .button {
-                        width: 20vw;
+                        width: 14vw;
+                        height: 60px;
 
                         p {
                             color: $primary-color;
                             font-family: $p-font;
                             margin: auto;
+                            font-size: 1.3vw;
                         }
                     }
                 }
@@ -222,6 +276,12 @@
                 grid-template-columns: repeat(3, 1fr);
                 
             }
+        }
+        .graphic-cont {
+            padding-top: 6rem;
+        }
+        .graphic {
+            width: 68vw;
         }
         .page3 {
             margin: 0 16vw 6rem;
