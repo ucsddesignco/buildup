@@ -14,7 +14,8 @@
   color: $primary-color;
   border-radius: 999px;
   border: 2px solid $secondary-color;
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
+  font-weight: 500;
 
   p {
     display: inline-block;
@@ -25,14 +26,16 @@
   @media only screen and (min-width: $mobile) {
     width: auto;
     padding: 0 32px;
+    margin-bottom: 0;
   }
 }
 
-.showcase__buttonAsLink:hover,  .showcase__buttonAsLink:active {
-    border: 2px solid #F0F4C3;
-    background: $primary-color;
+.showcase__buttonAsLink:hover,
+.showcase__buttonAsLink:active {
+  border: 2px solid #f0f4c3;
+  background: $primary-color;
 
-    p {
-      color: #F0F4C3;
-    }
+  p {
+    color: #f0f4c3;
+  }
 }

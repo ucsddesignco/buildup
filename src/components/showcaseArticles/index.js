@@ -1,43 +1,37 @@
 import React from "react";
 import ShowcaseButtonAsLink from "../showcaseButtonAsLink";
 import "./styles.scss";
-import ArticleGraphic1 from '../../assets/images/articleGraphic1.svg';
-import ArticleGraphic2 from '../../assets/images/articleGraphic2.svg';
-import ArticleGraphic3 from '../../assets/images/articleGraphic3.svg';
-import ArticleGraphic4 from '../../assets/images/articleGraphic4.svg';
+import { useWidth } from "../../hooks/useDimensions";
+import { useState } from "react";
 
 const articles = [
   {
     title: "BUILD UP COHORT EXPERIENCE (SUMMER 2022): PART 1",
     lead: "Read what 4 design and marketing mentors have to say about their experience",
     url: "",
-    image: "articleGraphic1",
-    illustration: 'illustration-container1',
   },
   {
     title: "BUILD UP COHORT EXPERIENCE (SUMMER 2022): PART 2",
     lead: "Read what 4 design and marketing mentors have to say about their experience",
     url: "",
-    image: "articleGraphic2",
-    illustration: 'illustration-container2',
   },
   {
     title: "BUILD UP MENTOR EXPERIENCE (SUMMER 2022)",
     lead: "Read what 4 design and marketing mentors have to say about their experience",
     url: "",
-    image: "articleGraphic3",
-    illustration: 'illustration-container3',
   },
   {
     title: "COOL NONPROFIT ARTICLE NAME LOL",
     lead: "Read what 4 design and marketing mentors have to say about their experience",
     url: "",
-    image: "articleGraphic4",
-    illustration: 'illustration-container4',
   },
 ];
 
 const ShowcaseArticles = () => {
+  const [target, setTarget] = useState();
+  const firstBoxWidth = useWidth(target);
+  console.log(firstBoxWidth);
+
   return (
     <section className="showcase__articles">
       <h2>Articles</h2>
@@ -46,34 +40,47 @@ const ShowcaseArticles = () => {
         experience!
       </p>
       <div className="showcase__articles__wrapper">
-        {articles.map((article) => (
+        {articles.map((article, articleIndex) => (
           <div className="showcase__articles__article">
-            <div className="top-container">
-              <h3>{article.title}</h3>
-              <p>{article.lead}</p> <div className="showcase__flex"></div>
+            <div
+              style={{
+                padding: 30,
+                flexGrow: 1,
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+              }}
+            >
+              <div>
+                {" "}
+                <h3>{article.title}</h3>
+                <p>{article.lead}</p>
+              </div>
               <div className="showcase__button__wrapper">
-                <ShowcaseButtonAsLink buttonText="READ ARTICLE" darkBorder />
-              </div>
+                <ShowcaseButtonAsLink buttonText="Read Article" darkBorder />
+              </div>{" "}
             </div>
-            <div className={article.illustration}>
-              <div className="square1">
-                <div className="circle"></div>
-              </div>
-              <div className="mobile-square"></div>
-              <div className="square"></div>
-              <div className="square2">
-                <div className="circle"></div>
-              </div>
-              <div className="mobile-square"></div>
-              <div className="square"></div>
-              <div className="square3">
-                <div className="circle"></div>
-              </div>
-              <div className="mobile-square"></div>
-              <div className="square"></div>
-              <div className="square4">
-                <div className="circle"></div>
-              </div>
+            <div
+              className="showcase__articles__illustration"
+              style={{
+                width: "calc(100% + 2px)",
+                display: "flex",
+                flexWrap: "wrap",
+                overflow: "hidden",
+                height: firstBoxWidth + 2,
+              }}
+            >
+              {[...Array(8)].map((_, boxIndex) => (
+                <div
+                  className="showcase__articles__illustration__box"
+                  ref={boxIndex === 0 ? setTarget : null}
+                  style={
+                    articleIndex === boxIndex
+                      ? { borderRadius: 999, background: "#9BB7FF" }
+                      : {}
+                  }
+                />
+              ))}
             </div>
           </div>
         ))}
