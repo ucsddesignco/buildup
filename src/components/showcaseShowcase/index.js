@@ -68,7 +68,7 @@ const ShowcaseShowcase = () => {
           <div className="showcase__actions__action">
             {" "}
             <h3>
-              Recordings to Come!
+              Showcase Recording to Come!
             </h3>
             {/* <ShowcaseButtonAsLink buttonText="Recording" /> */}
           </div>
