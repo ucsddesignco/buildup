@@ -86,7 +86,7 @@ const NewModal = (props) => {
                     src={require(`../../assets/images/Showcase/${current_team.team_files}/Builders/${member.member_image}.png`)}
                   />
                   <p className="member_name">{`{${member.member_name}}`}</p>
-                  <p>{member.member_title}</p>
+                  <p className="member_title">{member.member_title}</p>
                 </div>
               ))}
             </div>
@@ -106,7 +106,7 @@ const NewModal = (props) => {
                     src={require(`../../assets/images/Showcase/${current_team.team_files}/Mentors/${mentor.mentor_image}.png`)}
                   />
                   <p className="mentor_name">{`{${mentor.mentor_name}}`}</p>
-                  <p>{mentor.mentor_title}</p>
+                  <p className="mentor_title">{mentor.mentor_title}</p>
                 </div>
               ))}
             </div>

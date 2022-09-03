@@ -80,6 +80,7 @@
                 .dot {
                     background: $secondary-color !important;
                     opacity: 1 !important;
+                    box-shadow: none !important;
                 }
                 .dot.selected {
                     background: #43A047!important;
@@ -89,8 +90,6 @@
                 filter: grayscale(0) !important;
             }
         }
-        
-
         .button-container {
             overflow: auto;
 
@@ -146,6 +145,10 @@
                     }
                     .member_name {
                         padding-top: 0.6rem;
+                        text-transform: uppercase;
+                    }
+                    .member_title {
+                        font-weight: 400;
                     }
                 }
                 
@@ -190,6 +193,10 @@
                     }
                     .mentor_name {
                         padding-top: 0.6rem;
+                        text-transform: uppercase;
+                    }
+                    .mentor_title {
+                        font-weight: 400;
                     }
                 }
                 
