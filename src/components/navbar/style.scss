@@ -121,10 +121,11 @@
             align-items: center;
             background-color: #E7E5D1;
             border-top: $mobile-stroke;
-            padding: 2rem 8vw;
+            padding: 2rem 4vw;
             position: fixed;
-            width: 84vw;
+            width: 92vw;
             bottom: 0;
+            background-image: url("../../assets/images/website_texture.png");
         
             .footer-left {
                 display: flex;
@@ -134,7 +135,7 @@
         
                 p {
                     margin-right: 0.5rem;
-                    font-size: 0.5rem;
+                    font-size: 12px;
                 }
                 .footer-logo {
                     display: flex;
@@ -156,7 +157,7 @@
                 a {
                     text-decoration: underline;
                     color: #424242;
-                    font-size: 0.5rem;
+                    font-size: 10px;
                 }
             }
             

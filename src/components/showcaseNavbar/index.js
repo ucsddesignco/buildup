@@ -6,7 +6,7 @@ import BuildLogo from "../../assets/images/buildlogo.svg";
 import Cube from "../../assets/images/navbarCube.svg";
 import Heart from "../../assets/images/heart.svg";
 import Logo from "../../assets/images/logo.svg";
-import { Link } from "react-router-dom";
+import { a } from "react-router-dom";
 const pages = [
   { name: "SHOWCASE", url: "/" },
   { name: "ABOUT BUILD UP", url: "/about" },
@@ -29,15 +29,15 @@ const ShowcaseNavbar = ({ currentPage }) => {
 
   return (
     <div className="navbar">
-      <Link to="./">
+      <a href="./">
         <img src={BuildLogo} alt=""/>
-      </Link>
+      </a>
       <ul>
         {pages.map((page) => (
           <li>
-            <Link to={page.url}>
+            <a href={page.url}>
               {page.url === currentPage ? `{${page.name}}` : page.name}
-            </Link>
+            </a>
           </li>
         ))}
       </ul>
@@ -46,18 +46,18 @@ const ShowcaseNavbar = ({ currentPage }) => {
       {menuOpen && (
         <div className="mobile-container">
           <div className="top">
-            <Link to="./">
+            <a href="./">
               <img src={BuildLogo} alt="" className="build-up"/>
-            </Link>
+            </a>
             <img src={Cube} className="menu" onClick={closeMenu} />
           </div>
 
           {pages.map((page) => (
-            <Link to={page.url}>
+            <a href={page.url}>
               <div className="section">
                 <p>{page.name}</p>
               </div>
-            </Link>
+            </a>
           ))}
           <div className="border-bottom" />
 
@@ -66,17 +66,16 @@ const ShowcaseNavbar = ({ currentPage }) => {
               <p>Made with</p>
               <div className="footer-logo">
                 <img className="heart-icon" src={Heart} alt="heart-icon" />
-                <Link
-                  to="https://ucsddesign.co/"
+                <a
+                  href="https://ucsddesign.co/"
                   target="_blank"
-                  rel="noreferrer"
                 >
                   <img className="dco-footer-logo" src={Logo} alt="dco-logo" />
-                </Link>
+                </a>
               </div>
             </div>
             <div className="footer-right">
-              <Link to="mailto:hello@ucsddesign.co">hello@ucsddesign.co</Link>
+              <a href="mailto:hello@ucsddesign.co">hello@ucsddesign.co</a>
             </div>
           </div>
         </div>
