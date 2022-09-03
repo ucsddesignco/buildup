@@ -37,7 +37,7 @@ const ShowcaseShowcase = () => {
                 className="showcase__team__photo"
               >
                 <img
-                  src={require(`../../assets/images/Showcase/example.png`)}
+                  src={require(`../../assets/images/Showcase/${team.team_files}/showcase.png`)}
                   alt=""
                   className="showcase__team__cover"
                 />
