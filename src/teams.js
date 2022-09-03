@@ -4,7 +4,7 @@ export const Teams = [
         team_members: 'Karen Nieto, Esther Liu, Hanyi Wang, Don Le, Jessica Liu',
         description: 'Girls Rising is a nonprofit providing mentorship to at-risk girls in San Diego between the ages of 8-17. The team created a website redesign, marketing plan, and rebrand to increase nonprofit awareness in San Diego and help young girls from undeserved communities forge relationships with an inclusive network of female mentors.',
         team_shape: 'women',
-        case_study_link: 'https://planet-caper-7db.notion.site/Girls-Rising-204e4eb501454a0eb7c16f8d99c34594',
+        case_study_link: 'https://melodic-cafe-bbc.notion.site/Girls-Rising-b4ec059ca1b9468b9d1664733b74280e',
         team_files: 'Girls_Rising',
         team_image: 'example',
         number: 0,
