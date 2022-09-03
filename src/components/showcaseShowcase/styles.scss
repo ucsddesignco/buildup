@@ -11,6 +11,19 @@
   }
   overflow-x: hidden;
 
+  .header-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+
+    .header-showcase {
+      width: 105vw;
+      object-fit: contain;
+    }
+    @media only screen and (max-width: $mobile) {
+      margin-top: 2rem;
+    }
+  }
   h3 {
     font-family: $p-font;
   }

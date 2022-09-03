@@ -9,6 +9,7 @@ import ShowcaseGraphic2 from "../../assets/images/Showcase/assets/showcaseGraphi
 import ShowcaseGraphic3 from "../../assets/images/Showcase/assets/showcaseGraphic3.svg";
 import MobileDivider from "../../assets/images/Showcase/Team_Shapes/mobileDivider.svg";
 import ShowcaseHeader from "./ShowcaseHeader";
+import Header from "../../assets/images/Showcase/header.svg";
 
 const ShowcaseShowcase = () => {
   const [showModal, setShowModal] = useState(false);
@@ -25,7 +26,9 @@ const ShowcaseShowcase = () => {
 
   return (
     <section className="showcase">
-      <ShowcaseHeader />
+      <div className="header-container">
+        <img className="header-showcase" src={Header} alt="" />
+      </div>
       <div className="showcase__bottom">
         <div className="showcase__teams">
           {Teams.map((team) => (
@@ -65,9 +68,9 @@ const ShowcaseShowcase = () => {
           <div className="showcase__actions__action">
             {" "}
             <h3>
-              Missed out on the final showcase? Watch the recording below!{" "}
+              Recordings to Come!
             </h3>
-            <ShowcaseButtonAsLink buttonText="Recording" />
+            {/* <ShowcaseButtonAsLink buttonText="Recording" /> */}
           </div>
         </div>
       </div>

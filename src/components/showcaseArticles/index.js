@@ -21,7 +21,7 @@ const articles = [
     url: "",
   },
   {
-    title: "COOL NONPROFIT ARTICLE NAME LOL",
+    title: "Nonprofits Rebuilt by 33 Students in 10 Weeks",
     lead: "Read what 4 design and marketing mentors have to say about their experience",
     url: "",
   },
@@ -35,7 +35,8 @@ const ShowcaseArticles = () => {
   return (
     <section className="showcase__articles">
       <h2>Articles</h2>
-      <p>
+      <p>Articles Coming Soon!</p>
+      {/* <p>
         Hear what our Builders, mentors, and nonprofits had to say about their
         experience!
       </p>
@@ -84,7 +85,7 @@ const ShowcaseArticles = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };

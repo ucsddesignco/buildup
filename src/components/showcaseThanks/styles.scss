@@ -7,6 +7,10 @@
     color: $secondary-color;
     padding: 6rem 8vw 6rem 0;
 
+    @media only screen and (max-width: $mobile) {
+        padding: 4rem 8vw 4rem 0;
+    }
+
     .top-container {
         display: flex;
         flex-direction: row;
