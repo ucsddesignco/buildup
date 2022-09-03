@@ -187,7 +187,7 @@ export const Teams = [
         team_members: 'Grace Lin, Sabrina Mao, Anna Hoang, Christian Flores, Calvin Cheung',
         description: 'TransFamily Support Services is a nonprofit that supports trans-youth and their families through the journey of gender. The team created an accessible website redesign in order to transform the online identity of the nonprofit and bring together trans and nonbinary communities.',
         team_shape: 'lgbt',
-        case_study_link: 'https://christianflores.notion.site/christianflores/TransFamily-Support-Services-c2899839b9b241c7aea83f5718cd516f',
+        case_study_link: 'https://spiced-avenue-e92.notion.site/TransFamily-Support-Services-A-Build-Up-Case-Study-3332917018fe49d2ba885ed0333f9dc9',
         team_files: 'Transfamily_Support_Services',
         team_image: 'example',
         number: 3,
