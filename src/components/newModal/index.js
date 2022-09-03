@@ -3,6 +3,7 @@ import "./styles.scss";
 import { Teams } from "../../teams";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import ShowcaseButtonAsLink from "../showcaseButtonAsLink";
 
 //Assets
 import GroupOriginal from "../../assets/images/Showcase/Girls_Rising/group_original.png";
@@ -54,31 +55,20 @@ const NewModal = (props) => {
               swipeable={true}
               emulateTouch={true}
               className="carousel"
+              
             >
-              <div key={0} className="carousel1">
                 <img
                   src={require(`../../assets/images/Showcase/${current_team.team_files}/showcase.png`)}
                   className="grouporiginal"
-                  onClick={() => next(1)}
+                  onClick={() => next(0)}
+                  key={0}
                 />
-                <img
-                  src={require(`../../assets/images/Showcase/${current_team.team_files}/showcase_bw.png`)}
-                  className="groupduo"
-                  onClick={() => next(1)}
-                />
-              </div>
-              <div key={1} className="carousel1">
                 <img
                   src={require(`../../assets/images/Showcase/${current_team.team_files}/group_original.png`)}
                   className="grouporiginal"
-                  onClick={() => next(0)}
+                  onClick={() => next(1)}
+                  key={1}
                 />
-                <img
-                  src={require(`../../assets/images/Showcase/${current_team.team_files}/group_duo.png`)}
-                  className="groupduo"
-                  onClick={() => next(0)}
-                />
-              </div>
             </Carousel>
           </div>
 

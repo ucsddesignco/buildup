@@ -63,10 +63,12 @@
             }
         }
         .carousel {
+
             img {
                 pointer-events: auto !important;
-                cursor: pointer;
-                object-fit: contain;
+                cursor: pointer !important;
+                object-fit: contain !important;
+                filter: grayscale(100) !important;
             }
             .carousel-slider {
                 overflow: inherit;
@@ -83,17 +85,14 @@
                     background: #43A047!important;
                 }
             }
+            img:hover {
+                filter: grayscale(0) !important;
+            }
         }
-        .carousel1 .grouporiginal {
-            display: none;
-            z-index: 99;
-            position: absolute;
-        }
-        .carousel1:hover .grouporiginal {
-            display: inline;
-        }
+        
 
         .button-container {
+            overflow: auto;
 
             a {
                 text-decoration: none;
@@ -101,16 +100,17 @@
                 .button {
                     display: flex;
                     margin: 2.6rem 0 3rem;
-                    border-radius: 1.8rem;
+                    border-radius: 1000rem;
                     background-color: #9BB7FF;
                     border: 2px solid $secondary-color;
-                    height: 60px;
+                    height: 54px;
 
                     p {
                         color: $primary-color;
                         font-family: $p-font;
-                        font-weight: 400;
+                        font-weight: 500;
                         margin: auto;
+                        font-size: 20px;
                     }
                 }
             }
@@ -134,7 +134,7 @@
         .mentors-div, .mentors-div2, .mentors-div3 {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
+            gap: 4rem;
 
                 .mentor-grid-item {
                     img {
@@ -155,10 +155,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 3.1rem 0 2rem 0;
-    }
-    .graphic {
-        width: 84vw;
+        padding: 4rem 0 2rem;
+
+        .graphic {
+            width: 68vw;
+        }
     }
     .page3 {
         display: flex;
@@ -175,7 +176,7 @@
         .mentors-div, .mentors-div2, .mentors-div3 {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
+            gap: 4rem;
             justify-content: center;
 
                 .mentor-grid-item {
@@ -245,21 +246,21 @@
             }
 
             .button-container {
-                width: calc(14vw + 4px);
-                overflow: hidden;
+                width: 20vw;
+                min-width: 15rem;
 
                 a {
                     text-decoration: none;
 
                     .button {
-                        width: 14vw;
-                        height: 60px;
+                        height: 54px;
+                        padding: 0 32px;
 
                         p {
                             color: $primary-color;
                             font-family: $p-font;
                             margin: auto;
-                            font-size: 1.3vw;
+                            font-size: 20px;
                         }
                     }
                 }
@@ -279,9 +280,6 @@
         }
         .graphic-cont {
             padding-top: 6rem;
-        }
-        .graphic {
-            width: 68vw;
         }
         .page3 {
             margin: 0 16vw 6rem;
