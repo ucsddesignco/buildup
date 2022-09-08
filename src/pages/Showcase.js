@@ -13,6 +13,7 @@ import Opening from "../assets/images/Showcase/opening.mov";
 import Opening2 from "../assets/images/Showcase/opening.mp4";
 import Overlay from "../assets/images/Showcase/shop-overlay.mp4";
 import NewOverlay from "../assets/images/Showcase/newopening.mp4";
+import MobileOverlay from "../assets/images/Showcase/newopening-mobile.mp4";
 
 const Showcase = () => {
 
@@ -39,6 +40,9 @@ const Showcase = () => {
     <>
       <video className="showcase-opening" id="animation-container" muted loop autoPlay >
         <source src={NewOverlay} type="video/mp4" />
+      </video>
+      <video className="mobile-opening" id="animation-container" muted loop autoPlay >
+        <source src={MobileOverlay} type="video/mp4" />
       </video>
 
       <div id="delay">

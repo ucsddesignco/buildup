@@ -1,3 +1,5 @@
+@import "./base.scss";
+
 .App {
   // padding-top: 6rem;
 }
@@ -15,7 +17,21 @@
     height: 100vh;
     width: 100vw;
     object-fit: cover;
-  
+}
+
+.showcase-opening {
+  display: flex;
+}
+
+.mobile-opening {
+  display: none;
+}
+
+@media only screen and (max-width: $mobile) {
   .showcase-opening {
+    display: none;
+  }
+  .mobile-opening {
+    display: flex;
   }
 }
