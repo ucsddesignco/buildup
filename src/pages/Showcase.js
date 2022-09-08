@@ -44,16 +44,13 @@ const Showcase = () => {
       <video className="mobile-opening" id="animation-container" muted loop autoPlay >
         <source src={MobileOverlay} type="video/mp4" />
       </video>
-
-      <div id="delay">
-        <ShowcaseNavbar currentPage={"/"} />
-        <ShowcaseLanding />
-        <ShowcaseShowcase />
-        <ShowcaseArticles />
-        <ShowcaseThanks />
-        <NewModal />
-        <Footer />
-      </div>
+      <ShowcaseNavbar currentPage={"/"} />
+      <ShowcaseLanding />
+      <ShowcaseShowcase />
+      <ShowcaseArticles />
+      <ShowcaseThanks />
+      <NewModal />
+      <Footer />
     </>
   );
 };
