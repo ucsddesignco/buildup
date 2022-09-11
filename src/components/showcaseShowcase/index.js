@@ -62,15 +62,15 @@ const ShowcaseShowcase = () => {
         <div className="showcase__actions">
           <div className="showcase__actions__action">
             <h3>Learn more about the Build Up program below!</h3>
-            <ShowcaseButtonAsLink buttonText="About Build Up" />
+            <ShowcaseButtonAsLink url='/about' buttonText="About Build Up" />
           </div>
           <img src={ShowcaseGraphic3} />
           <div className="showcase__actions__action">
             {" "}
             <h3>
-              Showcase Recording to Come!
+              Missed out on the final showcase? Watch the recording below!
             </h3>
-            {/* <ShowcaseButtonAsLink buttonText="Recording" /> */}
+            <ShowcaseButtonAsLink target='_blank' url='https://www.youtube.com/watch?v=dZetO6Ogecc' buttonText="Recording" />
           </div>
         </div>
       </div>
