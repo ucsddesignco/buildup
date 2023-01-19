@@ -7,23 +7,23 @@ import { useState } from "react";
 const articles = [
   {
     title: "BUILD UP COHORT EXPERIENCE (SUMMER 2022): PART 1",
-    lead: "Read what 4 design and marketing mentors have to say about their experience",
-    url: "",
+    lead: "Meet the Builders of Girls Rising, Karen Organization of San Diego, and TransFamily Support Services",
+    url: "https://medium.com/@ucsddesignco/build-up-cohort-experience-summer-2022-part-1-de348fd00bfd",
   },
   {
     title: "BUILD UP COHORT EXPERIENCE (SUMMER 2022): PART 2",
-    lead: "Read what 4 design and marketing mentors have to say about their experience",
-    url: "",
+    lead: "Meet the Builders of La Chula Crew Foundation, Refugee Health Alliance, and North County LGBTQ Resource Center",
+    url: "https://medium.com/@ucsddesignco/build-up-cohort-experience-summer-2022-part-2-3bc936754ec5",
   },
   {
     title: "BUILD UP MENTOR EXPERIENCE (SUMMER 2022)",
-    lead: "Read what 4 design and marketing mentors have to say about their experience",
-    url: "",
+    lead: "Hear from 3 of our design and marketing industry mentors about their experience mentoring students",
+    url: "https://medium.com/@ucsddesignco/build-up-mentor-experience-summer-2022-f08f4ce13166",
   },
   {
-    title: "Nonprofits Rebuilt by 33 Students in 10 Weeks",
-    lead: "Read what 4 design and marketing mentors have to say about their experience",
-    url: "",
+    title: "BUILDING UP SAN DIEGO COMMUNITIES: HOW BUILD UP TEAMS REBUILT LOCAL NONPROFITS",
+    lead: "Featuring representatives from Girls Rising and TransFamily Support Services",
+    url: "https://medium.com/@ucsddesignco/building-up-a-foundation-how-build-up-teams-rebuilt-local-nonprofits-ca1ef5d0ab2f",
   },
 ];
 
@@ -35,8 +35,8 @@ const ShowcaseArticles = () => {
   return (
     <section className="showcase__articles">
       <h2>Articles</h2>
-      <p>Articles Coming Soon!</p>
-      {/* <p>
+      {/* <p>Articles Coming Soon!</p> */}
+      <p>
         Hear what our Builders, mentors, and nonprofits had to say about their
         experience!
       </p>
@@ -58,7 +58,7 @@ const ShowcaseArticles = () => {
                 <p>{article.lead}</p>
               </div>
               <div className="showcase__button__wrapper">
-                <ShowcaseButtonAsLink buttonText="Read Article" darkBorder />
+                <ShowcaseButtonAsLink url={article.url} target="_blank" buttonText="Read Article" darkBorder />
               </div>{" "}
             </div>
             <div
@@ -85,7 +85,7 @@ const ShowcaseArticles = () => {
             </div>
           </div>
         ))}
-      </div> */}
+      </div>
     </section>
   );
 };

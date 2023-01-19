@@ -17,7 +17,7 @@ import MobileOverlay from "../assets/images/Showcase/newopening-mobile.mp4";
 
 const Showcase = () => {
 
-  useEffect(() => {
+  /* useEffect(() => {
     const tl1 = gsap.timeline();
     tl1
       .to('#animation-container', {
@@ -32,20 +32,20 @@ const Showcase = () => {
           opacity: 1,
           delay: 2.5,
         })
-  }, [])
+  }, []) */
 
   
   
   return (
     <>
-      <video className="showcase-opening" id="animation-container" muted loop autoPlay >
+      {/* <video className="showcase-opening" id="animation-container" muted loop autoPlay >
         <source src={NewOverlay} type="video/mp4" />
       </video>
       <video className="mobile-opening" id="animation-container" muted loop autoPlay >
         <source src={MobileOverlay} type="video/mp4" />
-      </video>
+      </video> */}
 
-      <div id="delay">
+      <div /* id="delay" */>
         <ShowcaseNavbar currentPage={"/"} />
         <ShowcaseLanding />
         <ShowcaseShowcase />
